@@ -7,7 +7,7 @@
 }
 
 @mixin shadow($offset, $radius, $opacity) {
-	box-shadow: 0 $offset $radius rgba($color-black, $opacity);
+	box-shadow: 0 $offset $radius rgba($black, $opacity);
 }
 
 // available options:

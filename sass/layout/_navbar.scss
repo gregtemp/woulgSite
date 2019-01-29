@@ -9,6 +9,7 @@
     align-items: center;
 	background-color: $midgrey;
 	padding: 2rem;
+	@include shadow(0, .5rem, .5);
 
 	&__site-title {
 		display: inline-block;
@@ -16,6 +17,7 @@
 		font-size: $font-size-h2;
 	}
 
+// refers to uls
 	&__items {
 		display: flex;
 		flex-direction: row;
@@ -34,10 +36,12 @@
 		}
 	}
 
+// refers to lis
 	&__item {
 		text-decoration: none;
 		color: $offwhite;
 		font-size: $font-size-paragraph;
+		transition: .2s linear color;
 
 		&--nav {
 
@@ -45,6 +49,10 @@
 
 		&--social {
 
+		}
+
+		&:hover {
+			color: $nearblack;
 		}
 	}
 }

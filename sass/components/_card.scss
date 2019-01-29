@@ -7,12 +7,17 @@
 	position: relative;
 
 	&__link {
-		font-size: 1.4rem;
+		font-size: $font-size-paragraph;
 		color: $offwhite;
 		text-decoration: none;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		transition: .2s linear color;
+
+		&:hover {
+			color: $midgrey;
+		}
 	}
 }
