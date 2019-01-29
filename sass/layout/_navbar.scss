@@ -5,14 +5,14 @@
 	width: 100vw;
 	display: flex;
     justify-content: space-between;
-    height: 7rem;
+    height: $navbar-height;
     align-items: center;
-	background-color: #999;
+	background-color: $midgrey;
 	padding: 2rem;
 
 	&__site-title {
 		display: inline-block;
-		color: white;
+		color: $white;
 		font-size: $font-size-h2;
 	}
 
@@ -36,7 +36,7 @@
 
 	&__item {
 		text-decoration: none;
-		color: white;
+		color: $offwhite;
 		font-size: $font-size-paragraph;
 
 		&--nav {
@@ -44,7 +44,7 @@
 		}
 
 		&--social {
-			
+
 		}
 	}
 }
