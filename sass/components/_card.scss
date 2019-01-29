@@ -5,6 +5,15 @@
 	background-color: $darkgrey;
 	text-align: center;
 	position: relative;
+	transition: .1s ease transform;
+
+	&:hover {
+		transform: translateY(-.5rem);
+	}
+
+	&:hover &__link {
+		color: $midgrey;
+	}
 
 	&__link {
 		font-size: $font-size-paragraph;
@@ -15,9 +24,5 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		transition: .2s linear color;
-
-		&:hover {
-			color: $midgrey;
-		}
 	}
 }
