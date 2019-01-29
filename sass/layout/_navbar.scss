@@ -1,0 +1,50 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    align-items: center;
+	background-color: #999;
+	padding: 2rem;
+
+	&__site-title {
+		display: inline-block;
+		color: white;
+		font-size: $font-size-h2;
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+
+		& li:not(:last-child) {
+	    	margin: 0 1.5rem 0 0;
+		}
+
+		&--nav {
+
+		}
+
+		&--social {
+
+		}
+	}
+
+	&__item {
+		text-decoration: none;
+		color: white;
+		font-size: $font-size-paragraph;
+
+		&--nav {
+
+		}
+
+		&--social {
+			
+		}
+	}
+}
