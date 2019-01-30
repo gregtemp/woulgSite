@@ -12,13 +12,18 @@
 	}
 
 	&__media {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 25vw;
-		height: auto;
+		height: 25vh;
 		position: relative; 
 		padding-top: 1px;
 	}
 
 	&__iframe {
+		display: block;
+		margin: 0 auto;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -27,6 +32,7 @@
 	}
 
 	&__body {
-		margin-top: 30rem;
+		max-width: 25vw;
+		padding: 3rem 0 0 0;
 	}
 }
