@@ -7,7 +7,7 @@
     justify-content: space-between;
     height: $navbar-height;
     align-items: center;
-	background-color: $midgrey;
+	background-color: $nearblack;
 	padding: 2rem;
 	z-index: 1;
 	@include shadow(0, .5rem, .5);
@@ -42,7 +42,7 @@
 // refers to lis
 	&__item {
 		text-decoration: none;
-		color: $offwhite;
+		color: $midgrey;
 		font-size: $font-size-paragraph;
 		transition: .2s linear color;
 
@@ -55,7 +55,7 @@
 		}
 
 		&:hover {
-			color: $nearblack;
+			color: $offwhite;
 		}
 	}
 }
