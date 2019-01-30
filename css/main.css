@@ -157,6 +157,10 @@ body {
     list-style: none; }
     .navbar__items li:not(:last-child) {
       margin: 0 4rem 0 0; }
+    .navbar__items--nav {
+      padding-left: 13rem; }
+    .navbar__items--social {
+      padding-right: 2rem; }
   .navbar__item {
     text-decoration: none;
     color: #808080;
