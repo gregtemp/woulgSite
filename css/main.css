@@ -171,13 +171,15 @@ body {
   align-items: center;
   padding-top: 7rem;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #f2f2f2, #d9d9d9); }
+  background-image: linear-gradient(to bottom right, black, rgba(255, 255, 255, 0.5)), url("https://cdn.discordapp.com/attachments/539896153110609939/540024348640280576/50041770_2140894712633272_9139076964299046912_o.png");
+  background-size: cover;
+  background-position: top; }
 
 .card {
   display: inline-block;
   width: 25rem;
   height: 25rem;
-  background-color: #404040;
+  background-color: #1a1a1a;
   text-align: center;
   position: relative;
   transition: .1s ease transform;
@@ -188,21 +190,21 @@ body {
     transform: translateY(-0.5rem);
     box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.15); }
   .card:hover .card__link {
-    color: #404040; }
+    color: #000; }
   .card__inner {
-    width: 23rem;
-    height: 23rem;
-    background-color: #f2f2f2;
+    width: 24rem;
+    height: 24rem;
+    background-color: #404040;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .2s linear all; }
     .card__inner:hover {
-      background-color: #d9d9d9; }
+      background-color: #5a5a5a; }
   .card__link {
     font-size: 2.4rem;
-    color: #1a1a1a;
+    color: #f2f2f2;
     text-decoration: none;
     position: absolute;
     top: 50%;

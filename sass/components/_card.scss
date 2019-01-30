@@ -2,7 +2,7 @@
 	display: inline-block;
 	width: 25rem;
 	height: 25rem;
-	background-color: $darkgrey;
+	background-color: $nearblack;
 	text-align: center;
 	position: relative;
 	transition: .1s ease transform;
@@ -16,13 +16,13 @@
 	}
 
 	&:hover &__link {
-		color: $darkgrey;
+		color: $black;
 	}
 
 	&__inner {
-		width: 23rem;
-		height: 23rem;
-		background-color: $offwhite;
+		width: 24rem;
+		height: 24rem;
+		background-color: $darkgrey;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -30,13 +30,13 @@
 		transition: .2s linear all;
 
 		&:hover {
-			background-color: $lightgrey;
+			background-color: lighten($darkgrey, 10%);
 		}
 	}
 
 	&__link {
 		font-size: $font-size-h3;
-		color: $nearblack;
+		color: $offwhite;
 		text-decoration: none;
 		position: absolute;
 		top: 50%;
