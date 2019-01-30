@@ -1,3 +1,21 @@
+@keyframes moveInFromTop {
+  0% {
+    transform: translateY(-10vw); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes moveInFromBottom {
+  0% {
+    transform: translateY(5vw); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -121,7 +139,10 @@ body {
   align-items: center;
   background-color: #808080;
   padding: 2rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); }
+  z-index: 1;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  animation: moveInFromTop .75s ease .125s, fadeIn 1s ease .125s;
+  animation-fill-mode: backwards; }
   .navbar__site-title {
     display: inline-block;
     color: #fff;
@@ -131,7 +152,7 @@ body {
     flex-direction: row;
     list-style: none; }
     .navbar__items li:not(:last-child) {
-      margin: 0 1.5rem 0 0; }
+      margin: 0 4rem 0 0; }
   .navbar__item {
     text-decoration: none;
     color: #f2f2f2;
@@ -155,7 +176,9 @@ body {
   background-color: #404040;
   text-align: center;
   position: relative;
-  transition: .1s ease transform; }
+  transition: .1s ease transform;
+  z-index: 0;
+  animation: moveInFromBottom .5s ease, fadeIn 1s ease; }
   .card:hover {
     transform: translateY(-0.5rem); }
   .card:hover .card__link {

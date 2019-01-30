@@ -9,7 +9,10 @@
     align-items: center;
 	background-color: $midgrey;
 	padding: 2rem;
+	z-index: 1;
 	@include shadow(0, .5rem, .5);
+	animation: moveInFromTop .75s ease .125s, fadeIn 1s ease .125s;
+	animation-fill-mode: backwards;
 
 	&__site-title {
 		display: inline-block;
@@ -24,7 +27,7 @@
 		list-style: none;
 
 		& li:not(:last-child) {
-	    	margin: 0 1.5rem 0 0;
+	    	margin: 0 4rem 0 0;
 		}
 
 		&--nav {

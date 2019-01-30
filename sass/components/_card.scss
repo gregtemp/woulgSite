@@ -6,6 +6,8 @@
 	text-align: center;
 	position: relative;
 	transition: .1s ease transform;
+	z-index: 0;
+	animation: moveInFromBottom .5s ease, fadeIn 1s ease;
 
 	&:hover {
 		transform: translateY(-.5rem);
