@@ -163,8 +163,9 @@ body {
     font-size: 1.4rem;
     transition: .2s linear color; }
     .navbar__item--icon {
-      width: 3rem;
-      height: auto;
+      height: 3rem;
+      max-height: 2.5rem;
+      width: auto;
       fill: #808080;
       transition: .2s linear color; }
       .navbar__item--icon:hover {
@@ -178,7 +179,7 @@ body {
   align-items: center;
   padding-top: 7rem;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.125)), url(../img/background2.jpg);
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.5)), url(../img/tinymoon.jpg);
   background-size: cover;
   background-position: top; }
 

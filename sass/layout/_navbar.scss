@@ -53,8 +53,9 @@
 		transition: .2s linear color;
 
 		&--icon {
-			width: 3rem;
-			height: auto;
+			height: 3rem;
+			max-height: 2.5rem;
+			width: auto;
 			fill: $midgrey;
 			transition: .2s linear color;
 
