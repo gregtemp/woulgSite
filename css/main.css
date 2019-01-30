@@ -46,7 +46,7 @@ body {
       padding: 0; } }
 
 body {
-  font-family: monospace; }
+  font-family: "Roboto Mono", monospace; }
 
 .u-center-text {
   text-align: center !important; }
@@ -146,6 +146,7 @@ body {
   .navbar__site-title {
     display: inline-block;
     color: #fff;
+    font-family: "Roboto", sans-serif;
     font-size: 4rem;
     transition: .1s linear all; }
     .navbar__site-title:hover {
