@@ -182,10 +182,21 @@ body {
   .card:hover {
     transform: translateY(-0.5rem); }
   .card:hover .card__link {
-    color: #808080; }
+    color: #404040; }
+  .card__inner {
+    width: 23rem;
+    height: 23rem;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s linear all; }
+    .card__inner:hover {
+      background-color: #d9d9d9; }
   .card__link {
-    font-size: 1.4rem;
-    color: #f2f2f2;
+    font-size: 2.4rem;
+    color: #1a1a1a;
     text-decoration: none;
     position: absolute;
     top: 50%;
