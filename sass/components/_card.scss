@@ -8,9 +8,11 @@
 	transition: .1s ease transform;
 	z-index: 0;
 	animation: moveInFromBottom .5s ease, fadeIn 1s ease;
+	@include shadow(.25rem, .5rem, .2);
 
 	&:hover {
 		transform: translateY(-.5rem);
+		@include shadow(.5rem, .75rem, .15);
 	}
 
 	&:hover &__link {
