@@ -52,6 +52,17 @@
 		font-size: $font-size-paragraph;
 		transition: .2s linear color;
 
+		&--icon {
+			width: 3rem;
+			height: auto;
+			fill: $midgrey;
+			transition: .2s linear color;
+
+			&:hover {
+				fill: $offwhite;
+			}
+		}
+
 		&--nav {
 
 		}

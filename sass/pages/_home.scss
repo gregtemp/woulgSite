@@ -4,11 +4,10 @@
 	align-items: center;
 	padding-top: $navbar-height;
 	height: 100vh;
-	// background-image: linear-gradient(to bottom right, $offwhite, $lightgrey)
 	background-image: linear-gradient(to bottom right, 
-									  rgba($black, 1),
-									  rgba($white, .5)), 
-								      url("https://cdn.discordapp.com/attachments/539896153110609939/540024348640280576/50041770_2140894712633272_9139076964299046912_o.png");
+									  rgba($black, .75),
+									  rgba($white, .125)), 
+								      url(../img/background2.jpg);
 	background-size: cover;
 	background-position: top;
 }

@@ -162,6 +162,13 @@ body {
     color: #808080;
     font-size: 1.4rem;
     transition: .2s linear color; }
+    .navbar__item--icon {
+      width: 3rem;
+      height: auto;
+      fill: #808080;
+      transition: .2s linear color; }
+      .navbar__item--icon:hover {
+        fill: #f2f2f2; }
     .navbar__item:hover {
       color: #f2f2f2; }
 
@@ -171,7 +178,7 @@ body {
   align-items: center;
   padding-top: 7rem;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, black, rgba(255, 255, 255, 0.5)), url("https://cdn.discordapp.com/attachments/539896153110609939/540024348640280576/50041770_2140894712633272_9139076964299046912_o.png");
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.125)), url(../img/background2.jpg);
   background-size: cover;
   background-position: top; }
 
