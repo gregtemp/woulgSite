@@ -18,6 +18,11 @@
 		display: inline-block;
 		color: $white;
 		font-size: $font-size-h2;
+		transition: .1s linear all;
+
+		&:hover {
+			color: $lightgrey;
+		}
 	}
 
 // refers to uls
