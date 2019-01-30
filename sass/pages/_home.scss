@@ -11,3 +11,12 @@
 	background-size: cover;
 	background-position: top;
 }
+
+.section-av {
+	display: flex;
+	justify-content: space-evenly;
+	height: 100vh;
+	background-image: linear-gradient(to bottom right, 
+									  rgba($black, .75),
+									  rgba($white, .5));
+}

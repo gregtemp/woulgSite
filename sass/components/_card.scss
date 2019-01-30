@@ -44,4 +44,9 @@
 		transform: translate(-50%, -50%);
 		transition: .2s linear color;
 	}
+
+	@include responsive($tablet-portrait){
+		width: 15rem;
+		height: auto;
+	}
 }

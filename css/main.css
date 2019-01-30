@@ -183,6 +183,12 @@ body {
   background-size: cover;
   background-position: top; }
 
+.section-av {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.5)); }
+
 .card {
   display: inline-block;
   width: 25rem;
@@ -219,3 +225,32 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .2s linear color; }
+  @media (max-width: 56.25em) {
+    .card {
+      width: 15rem;
+      height: auto; } }
+
+.newspaper__column {
+  text-align: center;
+  padding-top: 15vh; }
+
+.newspaper__title {
+  display: inline-block;
+  font-size: 4rem;
+  margin-bottom: 5rem; }
+
+.newspaper__media {
+  width: 25vw;
+  height: auto;
+  position: relative;
+  padding-top: 1px; }
+
+.newspaper__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.newspaper__body {
+  margin-top: 30rem; }
