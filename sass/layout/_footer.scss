@@ -1,0 +1,57 @@
+.footer {
+	&__footer-box {
+		background-color: $darkgrey;
+		text-align: center;
+		height: auto;
+	}
+
+	&__logo {
+
+	}
+
+	&__navigation {
+
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-block;
+
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+
+	&__link {
+		font-size: $font-size-paragraph;
+		transition: .1s linear color;
+
+		&:link,
+		&:visited {
+			color: $lightgrey;
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		&:hover {
+			color: $nearblack;
+		}
+
+		&:active {
+			color: $offwhite;
+		}
+	}
+
+	&__copyright {
+		margin-top: 2rem;
+		font-size: $font-size-legal;
+		color: $midgrey;
+	}
+}
+
+#agohorel {
+	font-size: $font-size-legal;
+}

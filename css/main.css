@@ -177,6 +177,39 @@ body {
     .navbar__item:hover {
       color: #f2f2f2; }
 
+.footer__footer-box {
+  background-color: #404040;
+  text-align: center;
+  height: auto; }
+
+.footer__list {
+  list-style: none; }
+
+.footer__item {
+  display: inline-block; }
+  .footer__item:not(:last-child) {
+    margin-right: 2rem; }
+
+.footer__link {
+  font-size: 1.4rem;
+  transition: .1s linear color; }
+  .footer__link:link, .footer__link:visited {
+    color: #d9d9d9;
+    text-decoration: none;
+    display: inline-block; }
+  .footer__link:hover {
+    color: #1a1a1a; }
+  .footer__link:active {
+    color: #f2f2f2; }
+
+.footer__copyright {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #808080; }
+
+#agohorel {
+  font-size: 1rem; }
+
 .section-home {
   display: flex;
   justify-content: space-evenly;
