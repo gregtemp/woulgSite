@@ -222,7 +222,8 @@ body {
   height: 100vh;
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.5)), url(../img/tinymoon.jpg);
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  animation: fadeIn 2s; }
 
 .section-av {
   display: flex;
