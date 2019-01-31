@@ -6,7 +6,8 @@
 	}
 
 	&__logo {
-
+		width: 16rem;
+		padding: 2rem;
 	}
 
 	&__navigation {
@@ -37,7 +38,7 @@
 		}
 
 		&:hover {
-			color: $nearblack;
+			color: $midgrey;
 		}
 
 		&:active {
