@@ -277,12 +277,13 @@ body {
 
 .newspaper__column {
   text-align: center;
-  padding-top: 15vh; }
+  padding-top: 10vh;
+  max-width: 25vw; }
 
 .newspaper__title {
   display: inline-block;
-  font-size: 4rem;
-  margin-bottom: 5rem; }
+  font-size: 2.4rem;
+  margin-bottom: 3rem; }
 
 .newspaper__media {
   display: flex;
@@ -290,8 +291,7 @@ body {
   align-items: center;
   width: 25vw;
   height: 25vh;
-  position: relative;
-  padding-top: 1px; }
+  position: relative; }
 
 .newspaper__iframe {
   display: block;
@@ -302,6 +302,11 @@ body {
   width: 100%;
   height: 100%; }
 
+.newspaper__img {
+  width: 100%;
+  height: auto; }
+
 .newspaper__body {
   max-width: 25vw;
-  padding: 3rem 0 0 0; }
+  padding: 3rem 0 0 0;
+  text-align: left; }
