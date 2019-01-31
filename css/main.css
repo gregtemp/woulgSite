@@ -212,7 +212,10 @@ body {
   color: #808080; }
 
 #agohorel {
+  color: #b3b3b3;
   font-size: 1rem; }
+  #agohorel:hover {
+    color: #f2f2f2; }
 
 .section-home {
   display: flex;

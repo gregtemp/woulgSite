@@ -54,5 +54,10 @@
 }
 
 #agohorel {
+	color: lighten($midgrey, 20%);
 	font-size: $font-size-legal;
+
+	&:hover {
+		color: $offwhite;
+	}
 }
