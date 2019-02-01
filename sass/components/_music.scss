@@ -28,7 +28,19 @@
 	}
 
 	&__card {
-		
+
+		&-container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	
 		&-title {
 
 		}
@@ -38,7 +50,7 @@
 		}
 
 		&-img {
-
+			max-width: 40rem;
 		}
 
 		&-links {
@@ -46,7 +58,9 @@
 		}
 
 		&-link {
-			
+			&:not(:last-child){
+				margin-right: 3rem;
+			}
 		}
 	}
 }

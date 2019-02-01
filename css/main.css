@@ -332,3 +332,17 @@ body {
   .music__slider {
     display: inline-block;
     width: 100%; }
+  .music__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .music__card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .music__card-img {
+      max-width: 40rem; }
+    .music__card-link:not(:last-child) {
+      margin-right: 3rem; }
