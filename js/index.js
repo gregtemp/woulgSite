@@ -63,8 +63,8 @@ function makeCard(album, destParent) {
 	}
 
 	// add content to elements
-	title.innerHTML = album.title;
-	label.innerHTML = album.label;
+	title.innerHTML = album.title.toLowerCase();
+	label.innerHTML = album.label.toLowerCase();
 	album.albumArt ? img.src = album.albumArt : null;
 	album.bandcampLink ? bandcamp.innerHTML = "bandcamp" : null;
 	album.bandcampLink ? bandcamp.href = album.bandcampLink : null;
@@ -147,11 +147,20 @@ let releases = {
 		{
 			title: "Osiris - Voicodin (Woulg Remix)",
 			label: "Detroit Underground (Detroit, USA)",
-			albumArt: "./img/background.jpg",
-			bandcampLink: "https://www.bandcamp.com",
-			spotifyLink: "https://www.spotify.com",
-			appleMusicLink: "https://www.applemusic.com",
-			soundcloudLink: "https://www.soundcloud.com"
+			albumArt: "img/album_artwork/voicodinremix.jpg",
+			bandcampLink: "https://detund.bandcamp.com/track/voicodin-woulg-remix",
+			spotifyLink: "https://open.spotify.com/track/2cRCsjOn2vietXec0r58u4?si=LL1dnM-oTea7YS7shbjKTw",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/voicodin-woulg-remix/1291118341?i=1291118743&mt=1&app=music",
+			soundcloudLink: undefined
+		},
+		{
+			title: "The Science - The Sea and I (Woulg Remix)",
+			label: "Methlab Recordings (London, UK)",
+			albumArt: "img/album_artwork/theseaandiremix.jpg",
+			bandcampLink: "https://methlabagency.bandcamp.com/track/the-sea-and-i-woulg-remix",
+			spotifyLink: "https://open.spotify.com/track/19FMdn5dcVdG2djIjL84YY?si=aKI1whwoS7unU4Peu7R-XQ",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/the-sea-and-i-woulg-remix/1289456391?i=1289456684&mt=1&app=music",
+			soundcloudLink: undefined
 		}
 	],
 	2018: [
@@ -162,33 +171,6 @@ let releases = {
 			bandcampLink: "https://methlabagency.bandcamp.com/album/last-time-lp",
 			spotifyLink: "https://open.spotify.com/album/5woPaQlA2CnIRBVaH44DpS?si=MknWeyfGTsuj9qqI4c6Obw",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/last-time/1397362409?mt=1&app=music",
-			soundcloudLink: undefined
-		},
-		{
-			title: "what did you think would happen?",
-			label: "self-released collab w/ homesick",
-			albumArt: "img/album_artwork/whatdidyouthinkwouldhappen.jpg",
-			bandcampLink: "https://woulg.bandcamp.com/album/what-did-you-think-would-happen-collab-w-homesick",
-			spotifyLink: "https://open.spotify.com/album/2xqb5Ek27Uw1v0kOHGboFQ?si=AAWFgl5xQ9u3NwPnFYO8-w",
-			appleMusicLink: "https://geo.itunes.apple.com/us/album/what-did-you-think-would-happen-single/1391753569?mt=1&app=music",
-			soundcloudLink: undefined
-		},
-		{
-			title: "last time",
-			label: "methlab recordings (london, uk)",
-			albumArt: "img/album_artwork/lasttime.jpg",
-			bandcampLink: "https://methlabagency.bandcamp.com/album/last-time-lp",
-			spotifyLink: "https://open.spotify.com/album/5woPaQlA2CnIRBVaH44DpS?si=MknWeyfGTsuj9qqI4c6Obw",
-			appleMusicLink: "https://geo.itunes.apple.com/us/album/last-time/1397362409?mt=1&app=music",
-			soundcloudLink: undefined
-		},
-		{
-			title: "what did you think would happen?",
-			label: "self-released collab w/ homesick",
-			albumArt: "img/album_artwork/whatdidyouthinkwouldhappen.jpg",
-			bandcampLink: "https://woulg.bandcamp.com/album/what-did-you-think-would-happen-collab-w-homesick",
-			spotifyLink: "https://open.spotify.com/album/2xqb5Ek27Uw1v0kOHGboFQ?si=AAWFgl5xQ9u3NwPnFYO8-w",
-			appleMusicLink: "https://geo.itunes.apple.com/us/album/what-did-you-think-would-happen-single/1391753569?mt=1&app=music",
 			soundcloudLink: undefined
 		},
 		{
