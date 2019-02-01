@@ -366,5 +366,11 @@ body {
       max-width: 30rem; }
     .music__card-links {
       margin-top: 1rem; }
-    .music__card-link:not(:last-child) {
-      margin-right: 3rem; }
+    .music__card-link, .music__card-link:visited {
+      color: #1a1a1a;
+      text-decoration: none; }
+      .music__card-link:not(:last-child), .music__card-link:visited:not(:last-child) {
+        margin-right: 3rem; }
+      .music__card-link:hover, .music__card-link:visited:hover {
+        color: #404040;
+        font-weight: 800; }

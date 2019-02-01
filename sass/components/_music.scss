@@ -82,9 +82,18 @@
 			margin-top: 1rem;
 		}
 
-		&-link {
+		&-link,
+		&-link:visited {
+			color: $nearblack;
+			text-decoration: none;
+
 			&:not(:last-child){
 				margin-right: 3rem;
+			}
+
+			&:hover {
+				color: $darkgrey;
+				font-weight: 800;
 			}
 		}
 	}
