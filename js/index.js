@@ -80,68 +80,176 @@ function makeCard(album, destParent) {
 let releases = {
 	2011: [
 		{
-			title: "title 1",
-			label: "some label",
-			albumArt: "./img/background.jpg",
-			bandcampLink: "https://www.bandcamp.com",
-			spotifyLink: "https://www.spotify.com",
-			appleMusicLink: "https://www.applemusic.com",
-			soundcloudLink: "https://www.soundcloud.com"
+			title: "Hinchliffe Shuffle",
+			label: "Enigmatik Records (Melbourne, Australia)",
+			albumArt: "img/album_artwork/hinchliffeshuffle.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/hinchliffe-shuffle",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: undefined
+		},
+		{
+			title: "Floating Longingly Towards the Sun",
+			label: "Outlier Recordings (New York, USA)",
+			albumArt: "img/album_artwork/fltts.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/floating-longingly-towards-the-sun",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: undefined
+		},
+		{
+			title: "late",
+			label: "released on compilation by Outlier Recordings (New York, USA)",
+			albumArt: "img/album_artwork/outsourced.jpg",
+			bandcampLink: "https://outlierrecordings.bandcamp.com/track/late",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: undefined
+		},
+		{
+			title: "Vaetxh - Mass (Woulg Remix)",
+			label: "King Deluxe (Salmo, Canada)",
+			albumArt: "img/album_artwork/mass.jpg",
+			bandcampLink: "https://kingdeluxe.bandcamp.com/track/mass-woulg-kuffd-up-mirror-mix",
+			spotifyLink: "https://open.spotify.com/track/2JKnAcgDPS96m7maHydGJ8?si=OEffBp2qThKKcgx7mNZIiQ",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/mass-woulg-kuffd-up-mirror-mix/467921182?i=467921188&mt=1&app=music",
+			soundcloudLink: undefined
 		}
 	],
 	2012: [
 		{
-			title: "title 2",
-			label: "some label",
-			albumArt: "./img/background_inv.jpg",
-			bandcampLink: "https://www.bandcamp.com",
-			spotifyLink: "https://www.spotify.com",
-			appleMusicLink: "https://www.applemusic.com",
-			soundcloudLink: "https://www.soundcloud.com"
+			title: "Mindbuffer - Pan FM (Woulg Remix)",
+			label: "Enig’matik Records (Melbourne, Australia)",
+			albumArt: "img/album_artwork/mindbuffer.jpg",
+			bandcampLink: "https://enigmatikrecords.bandcamp.com/track/panfm-woulg-remix",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: undefined
+		},
+		{
+			title: "Zebbler Encanti Experience - Quetzacoatl (Woulg Remix)",
+			label: "Gravitas Recordings (Austin, USA)",
+			albumArt: "img/album_artwork/zee.jpg",
+			bandcampLink: "https://music.gravitasrecordings.com/track/quetzalcoatl-woulg-remix",
+			spotifyLink: "https://open.spotify.com/track/0tcKRYblCCof3w0nXOpQnx?si=KsYnfMY6Roa_Cqo-iEFmZg",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/quetzalcoatl-woulg-remix/591203992?i=591204289&mt=1&app=music",
+			soundcloudLink: undefined
 		}
 	],
 	2013: [
 		{
-			title: "title 3",
-			label: "some label",
-			albumArt: "./img/background.jpg",
-			bandcampLink: "https://www.bandcamp.com",
-			spotifyLink: "https://www.spotify.com",
-			appleMusicLink: "https://www.applemusic.com",
-			soundcloudLink: "https://www.soundcloud.com"
+			title: "cold land",
+			label: "Enig’matik Records (Melbourne, Australia)",
+			albumArt: "img/album_artwork/coldland.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/cold-land",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: undefined
+		},
+		{
+			title: "ghost",
+			label: "Outlier Recordings (New York, USA)",
+			albumArt: "img/album_artwork/ghost.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/ghost",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: undefined
+		},
+		{
+			title: "Zack Christ - Iced Out (Woulg Remix)",
+			label: "Enig’matik Records (Melbourne, Australia)",
+			albumArt: "img/album_artwork/icedout.jpg",
+			bandcampLink: "https://enigmatikrecords.bandcamp.com/track/iced-out-woulg-rmx",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: "https://soundcloud.com/enigmatikrecords/2-zack-christ-iced-out-woulg"
 		}
 	],
 	2014: [
 		{
-			title: "title 4",
-			label: "some label",
-			albumArt: "./img/background_inv.jpg",
-			bandcampLink: "https://www.bandcamp.com",
-			spotifyLink: "https://www.spotify.com",
-			appleMusicLink: "https://www.applemusic.com",
-			soundcloudLink: "https://www.soundcloud.com"
+			title: "thin veil",
+			label: "outlier recordings (new york, usa)",
+			albumArt: "img/album_artwork/thinveil.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/thin-veil",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: undefined
+		},
+		{
+			title: "punishment/ritual",
+			label: "Terra Null Recordings (Boston, USA)",
+			albumArt: "img/album_artwork/punishment.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/punishment-ritual",
+			spotifyLink: "https://open.spotify.com/album/34PumDRpevjupt2lqSpdJq?si=M6fRJLULQNuU9jmxjz_Wyw",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/punishment-ritual-single/912246974?mt=1&app=music",
+			soundcloudLink: undefined
+		},
+		{
+			title: "Cirrus - Shiver Shrapnel (Woulg Remix)",
+			label: "Terra Null Recordings (Boston, USA)",
+			albumArt: "img/album_artwork/shivershrapnel.jpg",
+			bandcampLink: "https://terranullrecordings.bandcamp.com/track/shiver-shrapnel-woulg-remix",
+			spotifyLink: undefined,
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/shiver-shrapnel-woulg-remix/824087886?i=824087896&mt=1&app=music",
+			soundcloudLink: undefined
 		}
 	],
 	2015: [
 		{
-			title: "title 5",
-			label: "some label",
-			albumArt: "./img/background.jpg",
-			bandcampLink: "https://www.bandcamp.com",
-			spotifyLink: "https://www.spotify.com",
-			appleMusicLink: "https://www.applemusic.com",
-			soundcloudLink: "https://www.soundcloud.com"
+			title: "Lars Fenin - Why Not (Woulg Remix)",
+			label: "Detroit Underground (Detroit, USA)",
+			albumArt: "img/album_artwork/solidarity.jpg",
+			bandcampLink: "https://detund.bandcamp.com/track/why-not-woulg-remix",
+			spotifyLink: undefined,
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/why-not-woulg-remix/1017056358?i=1017056497&mt=1&app=music",
+			soundcloudLink: undefined
 		}
 	],
 	2016: [
 		{
-			title: "title 6",
-			label: "some label",
-			albumArt: "./img/background_inv.jpg",
-			bandcampLink: "https://www.bandcamp.com",
-			spotifyLink: "https://www.spotify.com",
-			appleMusicLink: "https://www.applemusic.com",
-			soundcloudLink: "https://www.soundcloud.com"
+			title: "Dragged ",
+			label: "Methlab Recordings (London, UK)",
+			albumArt: "img/album_artwork/dragged.jpg",
+			bandcampLink: "https://methlabagency.bandcamp.com/album/dragged-ep",
+			spotifyLink: "https://open.spotify.com/album/1eccyG0BFIDfHjJq07iMER?si=xsf8oXfTSTGdT3_tkDdVzQ",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/dragged/1449502381?mt=1&app=music",
+			soundcloudLink: undefined
+		},
+		{
+			title: "tiny moon ",
+			label: "Outlier Recordings (New York, USA)",
+			albumArt: "img/album_artwork/tinymoon.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/tiny-moon",
+			spotifyLink: "https://open.spotify.com/album/6RlTfSNrkbvtwNpuHYJxbN?si=hzwkCrorSfW1n-yQzCJ2sg",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/tiny-moon/1446820936?mt=1&app=music",
+			soundcloudLink: undefined
+		},
+		{
+			title: "Robot Love - Filament (Woulg Remix) ",
+			label: "Outlier Recordings (New York, USA)",
+			albumArt: "img/album_artwork/bookofleaves.jpg",
+			bandcampLink: "https://outlierrecordings.bandcamp.com/album/out-66-book-of-leaves-remixes",
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: "https://soundcloud.com/woulgmusic/robot-love-filament-woulg-remix"
+		},
+		{
+			title: "Empathy Switch",
+			label: "collab w/ zebbler encanti experience",
+			albumArt: "img/album_artwork/empathyswitch.jpg",
+			bandcampLink: undefined,
+			spotifyLink: undefined,
+			appleMusicLink: undefined,
+			soundcloudLink: "https://soundcloud.com/zebblerencantiexperience/zebbler-encanti-experience-woulg-empathy-switch"
+		},
+		{
+			title: "Zack Christ - Centigrade Duckfucker (Woulg Remix)",
+			label: "Husoptagelser (Copenhagen, Denmark)",
+			albumArt: "img/album_artwork/zackchristremix.jpg",
+			bandcampLink: "https://husoptagelser.bandcamp.com/track/centigrade-duckfucker-woulg-remix",
+			spotifyLink: "https://open.spotify.com/track/1cNs4Bn9Tjj4dOd0m6uiV6?si=asehKrqAQIWEGdq8EScjWg",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/centigrade-duckfucker-woulg-remix/1183012854?i=1183012998&mt=1&app=music",
+			soundcloudLink: undefined
 		}
 	],
 	2017: [
