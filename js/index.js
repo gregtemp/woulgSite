@@ -66,10 +66,14 @@ function makeCard(album, destParent) {
 	title.innerHTML = album.title;
 	label.innerHTML = album.label;
 	album.albumArt ? img.src = album.albumArt : null;
-	album.bandcampLink ? bandcamp.innerHTML = album.bandcampLink : null;
-	album.spotifyLink ? spotify.innerHTML = album.spotifyLink : null;
-	album.appleMusicLink ? appleMusic.innerHTML = album.appleMusicLink : null;
-	album.soundcloudLink ? soundcloud.innerHTML = album.soundcloudLink : null;	
+	album.bandcampLink ? bandcamp.innerHTML = "bandcamp" : null;
+	album.bandcampLink ? bandcamp.href = album.bandcampLink : null;
+	album.spotifyLink ? spotify.innerHTML = "spotify" : null;
+	album.spotifyLink ? spotify.href = album.spotifyLink : null;
+	album.appleMusicLink ? appleMusic.innerHTML = "apple music" : null;
+	album.appleMusicLink ? appleMusic.href = album.appleMusicLink : null;
+	album.soundcloudLink ? soundcloud.innerHTML = "soundcloud" : null;	
+	album.soundcloudLink ? soundcloud.href = album.soundcloudLink : null;	
 }
 
 let releases = {
@@ -157,7 +161,7 @@ let releases = {
 			albumArt: "img/album_artwork/lasttime.jpg",
 			bandcampLink: "https://methlabagency.bandcamp.com/album/last-time-lp",
 			spotifyLink: "https://open.spotify.com/album/5woPaQlA2CnIRBVaH44DpS?si=MknWeyfGTsuj9qqI4c6Obw",
-			appleMusicLink: "https://www.applemusic.com",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/last-time/1397362409?mt=1&app=music",
 			soundcloudLink: undefined
 		},
 		{
@@ -166,7 +170,7 @@ let releases = {
 			albumArt: "img/album_artwork/whatdidyouthinkwouldhappen.jpg",
 			bandcampLink: "https://woulg.bandcamp.com/album/what-did-you-think-would-happen-collab-w-homesick",
 			spotifyLink: "https://open.spotify.com/album/2xqb5Ek27Uw1v0kOHGboFQ?si=AAWFgl5xQ9u3NwPnFYO8-w",
-			appleMusicLink: "https://www.applemusic.com",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/what-did-you-think-would-happen-single/1391753569?mt=1&app=music",
 			soundcloudLink: undefined
 		}
 	]
