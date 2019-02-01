@@ -1,4 +1,5 @@
 .music {
+	min-height: 100vh;
 	height: auto;
 
 	&__slider-container {
@@ -21,6 +22,26 @@
 	&__slider {
 		display: inline-block;
 		width: 100%;
+		-webkit-appearance: none;
+
+		height: 2rem;
+		background: $lightgrey;
+		outline: none;
+		opacity: 0.7;
+		transition: opacity .2s;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 2rem;
+			height: 2rem;
+			background: $nearblack;
+			cursor: pointer;
+		}
 	}
 
 	&__slider-helper {

@@ -317,6 +317,7 @@ body {
   text-align: left; }
 
 .music {
+  min-height: 100vh;
   height: auto; }
   .music__slider-container {
     display: flex;
@@ -331,7 +332,22 @@ body {
     width: 50%; }
   .music__slider {
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none;
+    height: 2rem;
+    background: #d9d9d9;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s; }
+    .music__slider:hover {
+      opacity: 1; }
+    .music__slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 2rem;
+      height: 2rem;
+      background: #1a1a1a;
+      cursor: pointer; }
   .music__card {
     display: flex;
     flex-direction: column;
