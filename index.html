@@ -16,9 +16,9 @@
 		<ul class="navbar__items navbar__items--nav">
 			<li><a href="#home" class="navbar__item navbar__item--nav">home</a></li>
 			<li><a href="#av" class="navbar__item navbar__item--nav">a/v</a></li>
-			<li><a href="" class="navbar__item navbar__item--nav">music</a></li>
-			<li><a href="" class="navbar__item navbar__item--nav">plugins</a></li>
-			<li><a href="" class="navbar__item navbar__item--nav">lessons</a></li>
+			<li><a href="#music" class="navbar__item navbar__item--nav">music</a></li>
+			<li><a href="#plugins" class="navbar__item navbar__item--nav">plugins</a></li>
+			<li><a href="#lessons" class="navbar__item navbar__item--nav">lessons</a></li>
 		</ul>
 
 		<ul class="navbar__items navbar__items--social">
@@ -57,7 +57,7 @@
 			</div>			
 		</a>
 
-		<a href="">
+		<a href="#music">
 			<div class="card">
 				<div class="card__inner">
 					<p class="card__link">music</p>
@@ -65,7 +65,7 @@
 			</div>			
 		</a>
 
-		<a href="">
+		<a href="#plugins">
 			<div class="card">
 				<div class="card__inner">
 					<p class="card__link">plugins</p>
@@ -73,7 +73,7 @@
 			</div>			
 		</a>
 
-		<a href="">
+		<a href="#lessons">
 			<div class="card">
 				<div class="card__inner">
 					<p class="card__link">lessons</p>
@@ -211,6 +211,23 @@
 			</p>
 		</div>
 		
+	</section>
+
+	<section class="section-music" id="music">
+		<div class="music">
+			<div class="music__slider-container">
+				<div class="music__slider-box">
+					<p class="music__slider-display"></p>
+					<input type="range" class="music__slider" min="2011" max="2018" value="2018" step="1">
+					<p class="music__slider-helper">move the slider to view releases from different years</p>
+				</div>
+			</div>
+
+			<div class="music__card-container">
+				<!-- GENERATED CARDS GO HERE -->
+			</div>
+
+		</div>
 	</section>
 
 	<footer class="footer">

@@ -1,0 +1,29 @@
+.music {
+	height: 100vh;
+
+	&__slider-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-top: 10rem;
+	}
+
+	&__slider-display {
+		font-size: $font-size-h2;
+	}
+
+	&__slider-box {
+		width: 50%;
+	}
+
+	&__slider {
+		display: inline-block;
+		width: 100%;
+	}
+
+	&__slider-helper {
+		
+	}
+}

@@ -87,8 +87,9 @@ body {
     .u-margin-bottom-small {
       margin-bottom: .2rem !important; } }
 
-.u-flexbox-spacer {
-  width: 100%; }
+.u-flexbox-linebreak {
+  width: 100% !important;
+  height: 1px; }
 
 .row {
   max-width: 114rem;
@@ -231,8 +232,12 @@ body {
 .section-av {
   display: flex;
   justify-content: space-evenly;
-  height: 100vh;
+  height: auto;
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.5)); }
+
+.section-av {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5)); }
 
 .card {
   display: inline-block;
@@ -310,3 +315,20 @@ body {
   max-width: 25vw;
   padding: 3rem 0 0 0;
   text-align: left; }
+
+.music {
+  height: 100vh; }
+  .music__slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10rem; }
+  .music__slider-display {
+    font-size: 4rem; }
+  .music__slider-box {
+    width: 50%; }
+  .music__slider {
+    display: inline-block;
+    width: 100%; }
