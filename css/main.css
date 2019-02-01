@@ -317,14 +317,14 @@ body {
   text-align: left; }
 
 .music {
-  height: 100vh; }
+  height: auto; }
   .music__slider-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 10rem; }
+    padding-top: 8rem; }
   .music__slider-display {
     font-size: 4rem; }
   .music__slider-box {
@@ -337,12 +337,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 3rem; }
     .music__card-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      padding-top: 2rem; }
     .music__card-img {
-      max-width: 40rem; }
+      margin-top: 1rem;
+      max-width: 30rem; }
+    .music__card-links {
+      margin-top: 1rem; }
     .music__card-link:not(:last-child) {
       margin-right: 3rem; }

@@ -1,5 +1,5 @@
 .music {
-	height: 100vh;
+	height: auto;
 
 	&__slider-container {
 		display: flex;
@@ -7,7 +7,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		padding-top: 10rem;
+		padding-top: 8rem;
 	}
 
 	&__slider-display {
@@ -29,10 +29,12 @@
 
 	&__card {
 
-		&-container{
+		&-container {
 			display: flex;
+			flex-wrap: wrap; 
 			justify-content: center;
 			align-items: center;
+			padding-top: 2rem;
 		}
 
 		display: flex;
@@ -40,6 +42,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		padding: 3rem;
 	
 		&-title {
 
@@ -50,11 +53,12 @@
 		}
 
 		&-img {
-			max-width: 40rem;
+			margin-top: 1rem;
+			max-width: 30rem;
 		}
 
 		&-links {
-
+			margin-top: 1rem;
 		}
 
 		&-link {

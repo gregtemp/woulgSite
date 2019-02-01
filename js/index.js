@@ -165,8 +165,35 @@ let releases = {
 			soundcloudLink: undefined
 		},
 		{
-			title: "what did you think would happen? (w/ homesick)",
-			label: "self-released",
+			title: "what did you think would happen?",
+			label: "self-released collab w/ homesick",
+			albumArt: "img/album_artwork/whatdidyouthinkwouldhappen.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/what-did-you-think-would-happen-collab-w-homesick",
+			spotifyLink: "https://open.spotify.com/album/2xqb5Ek27Uw1v0kOHGboFQ?si=AAWFgl5xQ9u3NwPnFYO8-w",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/what-did-you-think-would-happen-single/1391753569?mt=1&app=music",
+			soundcloudLink: undefined
+		},
+		{
+			title: "last time",
+			label: "methlab recordings (london, uk)",
+			albumArt: "img/album_artwork/lasttime.jpg",
+			bandcampLink: "https://methlabagency.bandcamp.com/album/last-time-lp",
+			spotifyLink: "https://open.spotify.com/album/5woPaQlA2CnIRBVaH44DpS?si=MknWeyfGTsuj9qqI4c6Obw",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/last-time/1397362409?mt=1&app=music",
+			soundcloudLink: undefined
+		},
+		{
+			title: "what did you think would happen?",
+			label: "self-released collab w/ homesick",
+			albumArt: "img/album_artwork/whatdidyouthinkwouldhappen.jpg",
+			bandcampLink: "https://woulg.bandcamp.com/album/what-did-you-think-would-happen-collab-w-homesick",
+			spotifyLink: "https://open.spotify.com/album/2xqb5Ek27Uw1v0kOHGboFQ?si=AAWFgl5xQ9u3NwPnFYO8-w",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/what-did-you-think-would-happen-single/1391753569?mt=1&app=music",
+			soundcloudLink: undefined
+		},
+		{
+			title: "what did you think would happen?",
+			label: "self-released collab w/ homesick",
 			albumArt: "img/album_artwork/whatdidyouthinkwouldhappen.jpg",
 			bandcampLink: "https://woulg.bandcamp.com/album/what-did-you-think-would-happen-collab-w-homesick",
 			spotifyLink: "https://open.spotify.com/album/2xqb5Ek27Uw1v0kOHGboFQ?si=AAWFgl5xQ9u3NwPnFYO8-w",
