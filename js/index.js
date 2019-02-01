@@ -65,11 +65,11 @@ function makeCard(album, destParent) {
 	// add content to elements
 	title.innerHTML = album.title;
 	label.innerHTML = album.label;
-	img.src = album.albumArt;
-	bandcamp.innerHTML = album.bandcampLink;
-	spotify.innerHTML = album.spotifyLink;
-	appleMusic.innerHTML = album.appleMusicLink;
-	soundcloud.innerHTML = album.soundcloudLink;
+	album.albumArt ? img.src = album.albumArt : null;
+	album.bandcampLink ? bandcamp.innerHTML = album.bandcampLink : null;
+	album.spotifyLink ? spotify.innerHTML = album.spotifyLink : null;
+	album.appleMusicLink ? appleMusic.innerHTML = album.appleMusicLink : null;
+	album.soundcloudLink ? soundcloud.innerHTML = album.soundcloudLink : null;	
 }
 
 let releases = {
