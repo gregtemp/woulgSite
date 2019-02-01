@@ -46,10 +46,10 @@ function makeCard(album, destParent) {
 	card.appendChild(img); 
 	card.appendChild(links);
 	// append links to links div
-	links.appendChild(bandcamp);
-	links.appendChild(spotify);
-	links.appendChild(appleMusic);
-	links.appendChild(soundcloud);
+	album.bandcampLink ? links.appendChild(bandcamp) : null;
+	album.spotifyLink ? links.appendChild(spotify) : null;
+	album.appleMusicLink ? links.appendChild(appleMusic) : null;
+	album.soundcloudLink ? links.appendChild(soundcloud) : null;
 
 	// apply classes
 	card.classList.add("music__card");
