@@ -59,7 +59,8 @@ function makeCard(album, destParent) {
 	links.classList.add("music__card-links");
 
 	for (let i = 0; i < links.children.length; i++){
-		links.children[i].classList.add("music__card-link");
+		links.children[i].classList.add("music__card-link"); // apply class
+		links.children[i].setAttribute("target", "_blank"); // set to open in new window
 	}
 
 	// add content to elements
@@ -160,6 +161,15 @@ let releases = {
 			bandcampLink: "https://methlabagency.bandcamp.com/track/the-sea-and-i-woulg-remix",
 			spotifyLink: "https://open.spotify.com/track/19FMdn5dcVdG2djIjL84YY?si=aKI1whwoS7unU4Peu7R-XQ",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/the-sea-and-i-woulg-remix/1289456391?i=1289456684&mt=1&app=music",
+			soundcloudLink: undefined
+		},
+		{
+			title: "Foonyap - Woolf and Plath (Woulg Remix)",
+			label: "Foonyap.bandcamp.com (Calgary, Canada)",
+			albumArt: "img/album_artwork/woolfandplathremix.jpg",
+			bandcampLink: "https://foonyap.bandcamp.com/track/woolf-and-plath-woulg-remix",
+			spotifyLink: "https://open.spotify.com/track/4TWh5zuTeUDLN3s4XBXWOB?si=QknFNcqcSGargQPogju55Q",
+			appleMusicLink: "https://geo.itunes.apple.com/us/album/woolf-and-plath-woulg-remix/1234641708?i=1234641709&mt=1&app=music",
 			soundcloudLink: undefined
 		}
 	],
