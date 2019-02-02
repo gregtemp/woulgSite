@@ -11,6 +11,7 @@ seeMoreBtn.forEach(function(button){
 			this.parentElement.nextElementSibling.style.display = "none";
 			toggleState = !toggleState;
 			this.innerText = "see more";
+			// @TODO scroll back to top of av section?
 		}
 	});
 });
