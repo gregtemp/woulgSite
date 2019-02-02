@@ -1,17 +1,15 @@
-let seeMoreBtn = document.querySelectorAll(".newspaper__popout-button");
+let seeMoreButtons = document.querySelectorAll(".newspaper__popout-button");
 
-seeMoreBtn.forEach(function(button){
-	let toggleState = false;
+seeMoreButtons.forEach((button) => {
 	button.addEventListener("click", function(){
-		if (!toggleState){
-			this.parentElement.nextElementSibling.style.display = "block";
-			this.innerText = "see less";
-			toggleState = !toggleState;
-		} else {
-			this.parentElement.nextElementSibling.style.display = "none";
-			toggleState = !toggleState;
-			this.innerText = "see more";
-			// @TODO scroll back to top of av section?
-		}
+		this.parentElement.nextElementSibling.style.display = "block";
+	});
+});
+
+let goBackButtons = document.querySelectorAll(".newspaper__popout-button--back");
+
+goBackButtons.forEach((button) => {
+	button.addEventListener("click", function(){
+		this.parentElement.parentElement.style.display = "none";
 	});
 });
