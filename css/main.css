@@ -340,7 +340,9 @@ body {
   padding: 1rem 2rem;
   margin-top: 2rem; }
   .newspaper__popout-button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #676767;
+    color: #e6e6e6; }
 
 .newspaper__popout-container {
   padding: 9rem 0 2rem 0;

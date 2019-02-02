@@ -53,6 +53,8 @@
 
 		&:hover {
 			cursor: pointer;
+			background-color: darken($midgrey, 10%);
+			color: darken($white, 10%);
 		}
 	}
 
