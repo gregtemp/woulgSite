@@ -41,4 +41,23 @@
 		padding: 3rem 0 0 0;
 		text-align: left;
 	}
+
+	&__popout-button {
+		border: none;
+		text-decoration: none;
+		font-family: "Roboto Mono", monospace;
+		background-color: $midgrey;
+		color: $white;
+		padding: 1rem 2rem;
+		margin-top: 2rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__popout-container {
+		padding: 9rem 0 2rem 0;
+		display: none;
+	}
 }

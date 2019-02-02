@@ -1,5 +1,5 @@
 let slider = document.querySelector(".music__slider");
-let sliderDisplay = document.querySelector(".music__slider-display");
+let yearDisplay = document.querySelector(".music__slider-display");
 let musicCardContainer = document.querySelector(".music__card-container");
 
 slider.oninput = () => {
@@ -7,7 +7,7 @@ slider.oninput = () => {
 }
 
 function updateDisplay() {
-	sliderDisplay.innerHTML = slider.value;
+	yearDisplay.innerHTML = slider.value;
 	let releasesFromYear = releases[slider.value];
 	let cards = document.querySelectorAll(".music__card");
 	
