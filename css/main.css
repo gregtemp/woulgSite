@@ -363,6 +363,11 @@ body {
       height: 2rem;
       background: #1a1a1a;
       cursor: pointer; }
+    .music__slider::-moz-range-thumb {
+      width: 2rem;
+      height: 2rem;
+      background: #1a1a1a;
+      cursor: pointer; }
   .music__card {
     display: flex;
     flex-direction: column;

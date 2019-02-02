@@ -42,6 +42,13 @@
 			background: $nearblack;
 			cursor: pointer;
 		}
+
+		&::-moz-range-thumb {
+			width: 2rem; 
+			height: 2rem; 
+			background: $nearblack;
+			cursor: pointer; 
+		}
 	}
 
 	&__slider-helper {
