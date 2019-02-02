@@ -356,7 +356,7 @@ body {
     transition: opacity .2s; }
     .music__slider:hover {
       opacity: 1; }
-    .music__slider::-webkit-slider-thumb {
+    .music__slider::-webkit-slider-thumb, .music__slider::-moz-range-thumb {
       -webkit-appearance: none;
       appearance: none;
       width: 2rem;

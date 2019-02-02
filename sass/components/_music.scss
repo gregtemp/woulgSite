@@ -34,7 +34,8 @@
 			opacity: 1;
 		}
 
-		&::-webkit-slider-thumb {
+		&::-webkit-slider-thumb,
+		&::-moz-range-thumb {
 			-webkit-appearance: none;
 			appearance: none;
 			width: 2rem;
