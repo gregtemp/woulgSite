@@ -59,7 +59,8 @@
 	}
 
 	&__popout-container {
-		padding: 9rem 0 2rem 0;
+		padding: 9rem 0 2rem 0; // 9 rem is offset for header
 		display: none;
+		height: 100vh;
 	}
 }

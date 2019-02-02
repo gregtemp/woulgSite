@@ -6,7 +6,6 @@
 	padding-top: $navbar-height;
 	min-height: 100vh;
 	height: auto;
-	width: 100vw;
 	background-image: linear-gradient(to bottom right, 
 									  rgba($black, .75),
 									  rgba($white, .5)), 
@@ -24,14 +23,16 @@
 	display: flex;
 	justify-content: space-evenly;
 	height: auto;
+	min-height: 100vh;
+	padding-bottom: 2rem;
 	background-image: linear-gradient(to bottom right, 
 									  rgba($black, .75),
 									  rgba($white, .5));
 }
 
-.section-av {
+.section-music {
 	height: auto;
-	background-image: linear-gradient(to bottom right, 
-									  rgba($white, .75),
-									  rgba($black, .5));
+	// background-image: linear-gradient(to bottom left, 
+	// 								  rgba($white, .5),
+	// 								  rgba($black, .75));
 }
