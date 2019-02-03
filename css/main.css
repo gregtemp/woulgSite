@@ -196,7 +196,7 @@ body {
     margin-right: 2rem; }
 
 .footer__link {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   transition: .1s linear color; }
   .footer__link:link, .footer__link:visited {
     color: #d9d9d9;
@@ -298,12 +298,12 @@ body {
 .newspaper__column {
   text-align: center;
   padding-top: 10vh;
-  max-width: 25vw; }
+  max-width: 22.5vw; }
 
 .newspaper__title {
   display: inline-block;
   font-size: 2.4rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 1.5rem; }
 
 .newspaper__media {
   display: flex;
@@ -327,9 +327,18 @@ body {
   height: auto; }
 
 .newspaper__body {
-  max-width: 25vw;
-  padding: 3rem 0 0 0;
-  text-align: left; }
+  display: inline-block;
+  max-width: 100%;
+  padding: 1.5rem 0 0 0;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  text-align: left;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
 
 .newspaper__popout-button {
   border: none;

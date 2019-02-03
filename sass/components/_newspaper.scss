@@ -3,13 +3,13 @@
 	&__column {
 		text-align: center;
 		padding-top: 10vh;
-		max-width: 25vw;
+		max-width: 22.5vw;
 	}
 
 	&__title {
 		display: inline-block;
 		font-size: $font-size-h3;
-		margin-bottom: 3rem;
+		margin-bottom: 1.5rem;
 	}
 
 	&__media {
@@ -37,9 +37,19 @@
 	}
 
 	&__body {
-		max-width: 25vw;
-		padding: 3rem 0 0 0;
+		display: inline-block;
+		max-width: 100%;
+		padding: 1.5rem 0 0 0;
+		font-size: $font-size-paragraph;
+		line-height: 1.2rem;
 		text-align: left;
+		
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
 	}
 
 	&__popout-button {
