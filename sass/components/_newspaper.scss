@@ -17,7 +17,7 @@
 		justify-content: center;
 		align-items: center;
 		width: 25vw;
-		height: 25vh;
+		height: 20vw;
 		position: relative; 
 	}
 
@@ -70,7 +70,44 @@
 
 	&__popout-container {
 		padding: 9rem 0 2rem 0; // 9 rem is offset for header
+		margin-top: 6rem;
 		display: none;
 		height: 100vh;
+	}
+
+	&__popout-title {
+		margin-bottom: 3rem;
+	}
+
+	@include responsive($tablet-portrait){
+		&__column {
+			max-width: 50vw;
+			padding-top: 9vh;
+		}
+
+		&__body {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+		}
+
+		&__media {
+			width: 50vw;
+			height: 35vw;
+		}
+
+		&__popout-title {
+			font-size: 3rem;
+		}
+	}
+
+	@include responsive($phone){
+		&__column {
+			max-width: 75vw;
+		}
+
+		&__media {
+			width: 75vw;
+			height: 50vw;
+		}
 	}
 }

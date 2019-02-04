@@ -28,6 +28,12 @@
 	background-image: linear-gradient(to bottom right, 
 									  rgba($black, .75),
 									  rgba($white, .5));
+
+	@include responsive($tablet-portrait){
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .section-music {
