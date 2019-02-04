@@ -87,6 +87,7 @@
 
 	@include responsive($tablet-portrait){
 		&__items {
+
 			&--nav {
 				display: none;
 			}
@@ -110,6 +111,27 @@
 				fill: $lightgrey;
 				cursor: pointer;
 			}
+		}
+	}
+
+	@include responsive($phone){
+		&__site-title {
+			font-size: calc(#{$font-size-h3} - (1rem - 3vw));
+		}
+
+		&__items {
+			& li:not(:last-child) {
+				margin: 0 3vw 0 0;
+			}
+
+			&--social {
+				// padding-right: calc(2rem + 3vw);
+				display: none;
+			}
+		}
+
+		&__hamburger-icon {
+			width: calc(2rem + 2vw);
 		}
 	}
 }

@@ -196,6 +196,15 @@ body {
       .navbar__hamburger-icon:hover {
         fill: #d9d9d9;
         cursor: pointer; } }
+  @media (max-width: 37.5em) {
+    .navbar__site-title {
+      font-size: calc(2.4rem - (1rem - 3vw)); }
+    .navbar__items li:not(:last-child) {
+      margin: 0 3vw 0 0; }
+    .navbar__items--social {
+      display: none; }
+    .navbar__hamburger-icon {
+      width: calc(2rem + 2vw); } }
 
 .footer__footer-box {
   background-color: #404040;
