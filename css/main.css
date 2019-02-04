@@ -177,6 +177,25 @@ body {
         fill: #f2f2f2; }
     .navbar__item:hover {
       color: #f2f2f2; }
+  .navbar__hamburger-container {
+    display: none; }
+  .navbar__hamburger-icon {
+    display: none; }
+  @media (max-width: 56.25em) {
+    .navbar__items--nav {
+      display: none; }
+    .navbar__items--social {
+      padding-right: 7rem; }
+    .navbar__hamburger-container {
+      display: block; }
+    .navbar__hamburger-icon {
+      display: block;
+      height: 100%;
+      width: 4rem;
+      fill: #fff; }
+      .navbar__hamburger-icon:hover {
+        fill: #d9d9d9;
+        cursor: pointer; } }
 
 .footer__footer-box {
   background-color: #404040;

@@ -76,4 +76,40 @@
 			color: $offwhite;
 		}
 	}
+
+	&__hamburger-container {
+		display: none;
+	}
+
+	&__hamburger-icon {
+		display: none;
+	}
+
+	@include responsive($tablet-portrait){
+		&__items {
+			&--nav {
+				display: none;
+			}
+
+			&--social {
+				padding-right: 7rem;
+			}
+		}
+
+		&__hamburger-container {
+			display: block;
+		}
+
+		&__hamburger-icon {
+			display: block;
+			height: 100%;
+			width: 4rem;
+			fill: $white;
+
+			&:hover {
+				fill: $lightgrey;
+				cursor: pointer;
+			}
+		}
+	}
 }
