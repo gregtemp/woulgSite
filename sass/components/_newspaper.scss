@@ -17,7 +17,7 @@
 		justify-content: center;
 		align-items: center;
 		width: 25vw;
-		height: 20vw;
+		height: 14.0625vw; // 25:14.0625 = 16:9
 		position: relative; 
 	}
 
@@ -76,7 +76,7 @@
 	}
 
 	&__popout-title {
-		margin-bottom: 3rem;
+		margin-bottom: 1.5rem;
 	}
 
 	@include responsive($tablet-portrait){
@@ -92,7 +92,7 @@
 
 		&__media {
 			width: 50vw;
-			height: 35vw;
+			height: 28.125vw;
 		}
 
 		&__popout-title {
@@ -107,7 +107,7 @@
 
 		&__media {
 			width: 75vw;
-			height: 50vw;
+			height: 42.1875vw;
 		}
 	}
 }

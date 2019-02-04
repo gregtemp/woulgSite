@@ -315,7 +315,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 25vw;
-  height: 20vw;
+  height: 14.0625vw;
   position: relative; }
 
 .newspaper__iframe {
@@ -365,7 +365,7 @@ body {
   height: 100vh; }
 
 .newspaper__popout-title {
-  margin-bottom: 3rem; }
+  margin-bottom: 1.5rem; }
 
 @media (max-width: 56.25em) {
   .newspaper__column {
@@ -376,7 +376,7 @@ body {
     line-height: 1.5rem; }
   .newspaper__media {
     width: 50vw;
-    height: 35vw; }
+    height: 28.125vw; }
   .newspaper__popout-title {
     font-size: 3rem; } }
 
@@ -385,7 +385,7 @@ body {
     max-width: 75vw; }
   .newspaper__media {
     width: 75vw;
-    height: 50vw; } }
+    height: 42.1875vw; } }
 
 .music {
   min-height: 100vh;
