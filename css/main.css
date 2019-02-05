@@ -281,13 +281,13 @@ body {
 .card {
   width: 25rem;
   height: 25rem;
-  background-color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
   transition: .1s ease transform;
   z-index: 0;
   animation: moveInFromBottom .5s ease, fadeIn 1s ease;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.35); }
   .card:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.15); }
@@ -296,17 +296,19 @@ body {
   .card__inner {
     width: 24rem;
     height: 24rem;
-    background-color: #404040;
+    background-color: rgba(217, 217, 217, 0.45);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .2s linear all; }
     .card__inner:hover {
-      background-color: #5a5a5a; }
+      background-color: rgba(217, 217, 217, 0.7); }
   .card__link {
-    font-size: 2.4rem;
-    color: #f2f2f2;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #1a1a1a;
     text-decoration: none;
     position: absolute;
     top: 50%;
@@ -322,11 +324,11 @@ body {
         height: 17rem; } }
   @media (max-width: 37.5em) {
     .card {
-      width: 30rem;
-      height: 20rem; }
+      width: 100vw;
+      height: 15vh; }
       .card__inner {
-        width: 29rem;
-        height: 19rem; } }
+        width: 100vw;
+        height: 14vh; } }
 
 .newspaper__column {
   text-align: center;
@@ -478,3 +480,23 @@ body {
       .music__card-link:hover, .music__card-link:visited:hover {
         color: #404040;
         font-weight: 800; }
+  @media (max-width: 56.25em) {
+    .music__slider {
+      height: 3rem; }
+      .music__slider::-webkit-slider-thumb {
+        width: 3rem;
+        height: 3rem; }
+      .music__slider::-moz-range-thumb {
+        width: 3rem;
+        height: 3rem; } }
+  @media (max-width: 37.5em) {
+    .music__slider-box {
+      width: 80%; }
+    .music__slider {
+      height: 4rem; }
+      .music__slider::-webkit-slider-thumb {
+        width: 4rem;
+        height: 4rem; }
+      .music__slider::-moz-range-thumb {
+        width: 4rem;
+        height: 4rem; } }

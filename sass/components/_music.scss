@@ -104,4 +104,40 @@
 			}
 		}
 	}
+
+	@include responsive($tablet-portrait) {
+		&__slider {
+			height: 3rem;
+
+			&::-webkit-slider-thumb { 
+				width: 3rem;
+				height: 3rem;
+			}
+
+			&::-moz-range-thumb {
+				width: 3rem;
+				height: 3rem;
+			}
+		}
+	}
+
+	@include responsive($phone) {
+		&__slider-box {
+			width: 80%;
+		}
+
+		&__slider {
+			height: 4rem;
+
+			&::-webkit-slider-thumb { 
+				width: 4rem;
+				height: 4rem;
+			}
+
+			&::-moz-range-thumb {
+				width: 4rem;
+				height: 4rem;
+			}
+		}
+	}
 }
