@@ -77,7 +77,7 @@
 		}
 
 		&-label {
-
+			color: $darkgrey;
 		}
 
 		&-img {
@@ -118,6 +118,30 @@
 				width: 3rem;
 				height: 3rem;
 			}
+
+			&-helper {
+				font-size: 1.2rem;
+			}
+		}
+
+		&-link,
+		&-link:visited {
+			font-size: 70%;
+		}
+
+		&__card {
+			&-link,
+			&-link:visited {
+				font-size: 1.2rem;
+			}
+
+			&-title {
+				font-size: 1.9rem;
+			}
+
+			&-label {
+				font-size: 1.3rem;
+			}
 		}
 	}
 
@@ -138,6 +162,27 @@
 				width: 4rem;
 				height: 4rem;
 			}
+		
+			&-helper {
+				font-size: 1.2rem;
+			}
 		}
+
+
+		&__card {
+			&-link,
+			&-link:visited {
+				font-size: 1.4rem;
+			}
+
+			&-title {
+				font-size: 2.2rem;
+			}
+
+			&-label {
+				font-size: 1.5rem;
+			}
+		}
+
 	}
 }
