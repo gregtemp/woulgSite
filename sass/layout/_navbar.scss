@@ -9,7 +9,7 @@
     align-items: center;
 	background-color: $nearblack;
 	padding: 2rem;
-	z-index: 1;
+	z-index: 2;
 	@include shadow(0, .5rem, .5);
 	animation: moveInFromTop .75s ease .125s, fadeIn 1s ease .125s;
 	animation-fill-mode: backwards;
@@ -132,6 +132,34 @@
 
 		&__hamburger-icon {
 			width: calc(2rem + 2vw);
+		}
+	}
+}
+
+.mobilenav {
+	&__container {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: $nearblack;
+	}
+
+	&__item {
+		font-size: $font-size-h3;
+		color: $offwhite;
+		text-decoration: none;
+		padding: 4rem;
+
+		&:hover {
+			color: $midgrey;
 		}
 	}
 }
