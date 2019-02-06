@@ -555,7 +555,8 @@ body {
     .music-link, .music-link:visited {
       font-size: 70%; }
     .music__card-link, .music__card-link:visited {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      text-decoration: underline; }
     .music__card-title {
       font-size: 1.9rem; }
     .music__card-label {
