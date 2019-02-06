@@ -26,13 +26,14 @@ hamburger.addEventListener("click", () => {
 mobileNavItems.forEach((item) => {
 	item.addEventListener("click", () => {
 		mobileNav.style.display = "none";
+		hamburger.classList.add("navbar__hamburger-animation--backwards");
 		isVisible = false;
 	});
 });
 
 function removeClass(element, className){
 	console.log(className);
-	setTimeout(()=>{
+	setTimeout( () => {
 		element.classList.remove(className);
 		// make mobilenav invisible after playing slide out animation
 		className === "mobilenav__container--slideOut" ? mobileNav.style.display = "none" : null;
