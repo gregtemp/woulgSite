@@ -28,6 +28,18 @@
   100% {
     transform: translateY(-100vh); } }
 
+@keyframes rotateHamburger {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(90deg); } }
+
+@keyframes rotateHamburgerBack {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(0); } }
+
 *,
 *::after,
 *::before {
@@ -193,6 +205,12 @@ body {
     display: none; }
   .navbar__hamburger-icon {
     display: none; }
+  .navbar__hamburger-animation--forwards {
+    animation: rotateHamburger .25s ease;
+    animation-fill-mode: forwards; }
+  .navbar__hamburger-animation--backwards {
+    animation: rotateHamburgerBack .25s ease;
+    animation-fill-mode: forwards; }
   @media (max-width: 56.25em) {
     .navbar__items--nav {
       display: none; }

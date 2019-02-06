@@ -5,14 +5,21 @@ let isVisible = false;
 
 hamburger.addEventListener("click", () => {
 	if (!isVisible){
-		mobileNav.style.display = "flex";
+		mobileNav.style.display = "flex"; // make mobilenav visible
+		// start animations
 		mobileNav.classList.add("mobilenav__container--slideIn");
+		hamburger.classList.add("navbar__hamburger-animation--forwards");
+		// start async call to remove animation class after animation finishes
+		removeClass(mobileNav, "mobilenav__container--slideIn");
+		// toggle hamburger rotation state
+		hamburger.classList.remove("navbar__hamburger-animation--backwards");
 		isVisible = !isVisible;
-		removeClass("mobilenav__container--slideIn");
 	} else {
 		mobileNav.classList.add("mobilenav__container--slideOut");
+		hamburger.classList.add("navbar__hamburger-animation--backwards");
+		removeClass(mobileNav, "mobilenav__container--slideOut");
+		hamburger.classList.remove("navbar__hamburger-animation--forwards");
 		isVisible = !isVisible;
-		removeClass("mobilenav__container--slideOut");
 	}
 });
 
@@ -23,9 +30,11 @@ mobileNavItems.forEach((item) => {
 	});
 });
 
-function removeClass(className){
+function removeClass(element, className){
+	console.log(className);
 	setTimeout(()=>{
-		mobileNav.classList.remove(className);
+		element.classList.remove(className);
+		// make mobilenav invisible after playing slide out animation
 		className === "mobilenav__container--slideOut" ? mobileNav.style.display = "none" : null;
 	}, 250);
 }

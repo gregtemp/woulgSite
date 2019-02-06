@@ -27,3 +27,15 @@
 
 	100% { transform: translateY(-100vh); }
 }
+
+@keyframes rotateHamburger {
+	0% { transform: rotate(0); }
+
+	100% { transform: rotate(90deg); }
+}
+
+@keyframes rotateHamburgerBack {
+	0% { transform: rotate(90deg); }
+
+	100% { transform: rotate(0); }
+}

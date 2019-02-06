@@ -77,12 +77,24 @@
 		}
 	}
 
-	&__hamburger-container {
-		display: none;
-	}
+	&__hamburger {
+		&-container {
+			display: none;
+		}
 
-	&__hamburger-icon {
-		display: none;
+		&-icon {
+			display: none;
+		}
+
+		&-animation--forwards {
+			animation: rotateHamburger .25s ease;
+			animation-fill-mode: forwards;
+		}
+
+		&-animation--backwards {
+			animation: rotateHamburgerBack .25s ease;
+			animation-fill-mode: forwards;
+		}
 	}
 
 	@include responsive($tablet-portrait){
