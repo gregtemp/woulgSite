@@ -15,3 +15,15 @@
 
 	100% { opacity: 1; }
 }
+
+@keyframes slideInMobileNav {
+	0% { transform: translateY(-100vh); }
+
+	100% { transform: translateY(0); }
+}
+
+@keyframes slideOutMobileNav {
+	0% { transform: translateY(0); }
+
+	100% { transform: translateY(-100vh); }
+}

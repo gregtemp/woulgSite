@@ -152,6 +152,16 @@
 		background-color: $nearblack;
 	}
 
+	&__container--slideIn {
+		animation: slideInMobileNav .25s ease;
+		animation-fill-mode: backwards;
+	}
+
+	&__container--slideOut {
+		animation: slideOutMobileNav .25s ease;
+		animation-fill-mode: forwards;
+	}
+
 	&__item {
 		font-size: $font-size-h3;
 		color: $offwhite;

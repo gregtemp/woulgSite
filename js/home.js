@@ -6,10 +6,13 @@ let isVisible = false;
 hamburger.addEventListener("click", () => {
 	if (!isVisible){
 		mobileNav.style.display = "flex";
-		isVisible = !isVisible;	
-	} else {
-		mobileNav.style.display = "none";
+		mobileNav.classList.add("mobilenav__container--slideIn");
 		isVisible = !isVisible;
+		removeClass("mobilenav__container--slideIn");
+	} else {
+		mobileNav.classList.add("mobilenav__container--slideOut");
+		isVisible = !isVisible;
+		removeClass("mobilenav__container--slideOut");
 	}
 });
 
@@ -19,3 +22,10 @@ mobileNavItems.forEach((item) => {
 		isVisible = false;
 	});
 });
+
+function removeClass(className){
+	setTimeout(()=>{
+		mobileNav.classList.remove(className);
+		className === "mobilenav__container--slideOut" ? mobileNav.style.display = "none" : null;
+	}, 250);
+}
