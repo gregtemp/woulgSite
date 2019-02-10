@@ -50,14 +50,15 @@
 		margin-top: 1rem;
 		font-size: $font-size-legal;
 		color: $midgrey;
-	}
-}
 
-#agohorel {
-	color: lighten($midgrey, 20%);
-	font-size: $font-size-legal;
+		&-devname {
+			color: lighten($midgrey, 20%);
+			font-size: $font-size-legal;
+			text-decoration: none;
 
-	&:hover {
-		color: $offwhite;
+			&:hover {
+				color: $offwhite;
+			}
+		}
 	}
 }

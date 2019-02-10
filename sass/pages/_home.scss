@@ -42,3 +42,26 @@
 	// 								  rgba($white, .5),
 	// 								  rgba($black, .75));
 }
+
+.section-plugins {
+	height: auto;
+	text-align: center;
+	background-image: linear-gradient(to bottom left, 
+									  rgba($white, .25),
+									  rgba($black, .125));
+
+	&__title {
+		font-size: $font-size-h2;
+	}
+
+	&__category {
+		font-size: $font-size-h3;
+	}
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+}

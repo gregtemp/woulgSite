@@ -298,12 +298,12 @@ body {
   margin-top: 1rem;
   font-size: 1rem;
   color: #808080; }
-
-#agohorel {
-  color: #b3b3b3;
-  font-size: 1rem; }
-  #agohorel:hover {
-    color: #f2f2f2; }
+  .footer__copyright-devname {
+    color: #b3b3b3;
+    font-size: 1rem;
+    text-decoration: none; }
+    .footer__copyright-devname:hover {
+      color: #f2f2f2; }
 
 .section-home {
   display: flex;
@@ -336,6 +336,20 @@ body {
 
 .section-music {
   height: auto; }
+
+.section-plugins {
+  height: auto;
+  text-align: center;
+  background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.125)); }
+  .section-plugins__title {
+    font-size: 4rem; }
+  .section-plugins__category {
+    font-size: 2.4rem; }
+  .section-plugins__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
 
 .card {
   width: 25rem;
@@ -580,3 +594,17 @@ body {
       font-size: 2.2rem; }
     .music__card-label {
       font-size: 1.5rem; } }
+
+.plugin {
+  display: flex;
+  flex-direction: column;
+  justify-contents: center;
+  align-items: center;
+  padding: 3rem; }
+  .plugin__img {
+    max-width: 25rem;
+    height: auto; }
+  .plugin__link, .plugin__link:hover, .plugin__link:visited {
+    color: #000;
+    font-size: 1.1rem;
+    text-decoration: none; }

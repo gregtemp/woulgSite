@@ -1,0 +1,20 @@
+.plugin {
+	display: flex;
+	flex-direction: column;
+	justify-contents: center;
+	align-items: center;
+	padding: 3rem;
+
+	&__img {
+		max-width: 25rem;
+		height: auto;
+	}
+
+	&__link,
+	&__link:hover,
+	&__link:visited {
+		color: $black;
+		font-size: $font-size-paragraph;
+		text-decoration: none;
+	}
+}
