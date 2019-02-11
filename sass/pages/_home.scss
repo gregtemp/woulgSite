@@ -46,6 +46,7 @@
 .section-plugins {
 	height: auto;
 	text-align: center;
+	padding-top: $navbar-height;
 	background-image: linear-gradient(to bottom left, 
 									  rgba($white, .25),
 									  rgba($black, .125));
