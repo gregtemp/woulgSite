@@ -100,6 +100,61 @@ let maxPatches = [
 	}
 ];
 
+let reaktorPatches = [
+	{
+		title: "wavy tables",
+		img: "./img/plugin_artwork/niceenveloperandomnumbers.jpg",
+		gumroadLink: "https://gumroad.com/l/eplbI",
+		bandcampLink: undefined
+	},
+	{
+		title: "quick granny",
+		img: "./img/plugin_artwork/quickgranny.jpg",
+		gumroadLink: "https://gumroad.com/l/itqDMk",
+		bandcampLink: undefined
+	},
+	{
+		title: "speckled freeze",
+		img: "./img/plugin_artwork/speckledfreeze.jpg",
+		gumroadLink: undefined,
+		bandcampLink: "https://woulg-related.bandcamp.com/album/speckled-freeze"
+	},
+	{
+		title: "glasshole",
+		img: "./img/plugin_artwork/glasshole.jpg",
+		gumroadLink: undefined,
+		bandcampLink: "https://woulg-related.bandcamp.com/album/glasshole"
+	},
+	{
+		title: "autoOscPan",
+		img: "./img/plugin_artwork/autooscpan.jpg",
+		gumroadLink: undefined,
+		bandcampLink: "https://woulg-related.bandcamp.com/album/autooscpan"
+	},
+	{
+		title: "bad eq",
+		img: "./img/plugin_artwork/badeq.jpg",
+		gumroadLink: undefined,
+		bandcampLink: "https://woulg-related.bandcamp.com/album/badeq"
+	},
+	{
+		title: "granular NaN",
+		img: "./img/plugin_artwork/granularnan.jpg",
+		gumroadLink: undefined,
+		bandcampLink: "https://woulg-related.bandcamp.com/album/granular-nan"
+	},
+	{
+		title: "geometry distortion",
+		img: "./img/plugin_artwork/geometrydistortion.jpg",
+		gumroadLink: undefined,
+		bandcampLink: "https://woulg-related.bandcamp.com/album/geometry-distortion"
+	}
+];
+
 for (let i = 0; i < maxPatches.length; i++){
-	makePluginCard(maxPatches[i], ".section-plugins__container");
+	makePluginCard(maxPatches[i], "#max-patches");
+}
+
+for (let i = 0; i < reaktorPatches.length; i++){
+	makePluginCard(reaktorPatches[i], "#reaktor-patches");
 }
