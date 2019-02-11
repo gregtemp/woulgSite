@@ -70,7 +70,7 @@ let maxPatches = [
 	},
 	{
 		title: "4IR convolve",
-		img: "./img/plugin_artwork/4irconvolve.jpg",
+		img: "./img/plugin_artwork/4IRconvolve.jpg",
 		gumroadLink: "https://gumroad.com/l/HXzFb",
 		bandcampLink: undefined
 	},
