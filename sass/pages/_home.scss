@@ -54,6 +54,7 @@
 	&__title {
 		font-size: $font-size-h2;
 		font-weight: 400;
+		padding: 2rem 0 2rem 0;
 	}
 
 	&__category {
@@ -65,5 +66,6 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: 4rem;
 	}
 }
