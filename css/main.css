@@ -599,13 +599,17 @@ body {
 .plugin {
   display: flex;
   flex-direction: column;
-  justify-contents: center;
+  justify-content: center;
   align-items: center;
   padding: 3rem; }
   .plugin__img {
     max-width: 25rem;
     height: auto; }
-  .plugin__link, .plugin__link:hover, .plugin__link:visited {
+    .plugin__img:hover {
+      opacity: .75; }
+  .plugin__link, .plugin__link:visited {
     color: #000;
     font-size: 1.1rem;
     text-decoration: none; }
+  .plugin__link:hover {
+    font-weight: 700; }

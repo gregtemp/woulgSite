@@ -1,20 +1,27 @@
 .plugin {
 	display: flex;
 	flex-direction: column;
-	justify-contents: center;
+	justify-content: center;
 	align-items: center;
 	padding: 3rem;
 
 	&__img {
 		max-width: 25rem;
 		height: auto;
+
+		&:hover {
+			opacity: .75;
+		}
 	}
 
 	&__link,
-	&__link:hover,
 	&__link:visited {
 		color: $black;
 		font-size: $font-size-paragraph;
 		text-decoration: none;
+	}
+
+	&__link:hover {
+		font-weight: 700;
 	}
 }
