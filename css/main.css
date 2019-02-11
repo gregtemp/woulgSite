@@ -342,7 +342,8 @@ body {
   text-align: center;
   background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.125)); }
   .section-plugins__title {
-    font-size: 4rem; }
+    font-size: 4rem;
+    font-weight: 400; }
   .section-plugins__category {
     font-size: 2.4rem; }
   .section-plugins__container {

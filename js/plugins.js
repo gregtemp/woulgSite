@@ -1,4 +1,4 @@
-function makeCard(plugin, destParent) {
+function makePluginCard(plugin, destParent) {
 	let card = document.createElement("div");
 	let name = document.createElement("a");
 	let imgAnchor = document.createElement("a");
@@ -101,5 +101,5 @@ let maxPatches = [
 ];
 
 for (let i = 0; i < maxPatches.length; i++){
-	makeCard(maxPatches[i], ".section-plugins__container");
+	makePluginCard(maxPatches[i], ".section-plugins__container");
 }

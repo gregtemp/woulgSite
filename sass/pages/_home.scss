@@ -38,9 +38,9 @@
 
 .section-music {
 	height: auto;
-	// background-image: linear-gradient(to bottom left, 
-	// 								  rgba($white, .5),
-	// 								  rgba($black, .75));
+	// background-image: linear-gradient(to bottom right, 
+	// 								  rgba($black, .125),
+	// 								  rgba($white, .25));
 }
 
 .section-plugins {
@@ -52,6 +52,7 @@
 
 	&__title {
 		font-size: $font-size-h2;
+		font-weight: 400;
 	}
 
 	&__category {
