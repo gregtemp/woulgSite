@@ -72,6 +72,10 @@ body {
 body {
   font-family: "Roboto Mono", monospace; }
 
+::selection {
+  background: #808080;
+  color: #f2f2f2; }
+
 .u-center-text {
   text-align: center !important; }
 
