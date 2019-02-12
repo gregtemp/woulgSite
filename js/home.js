@@ -32,7 +32,6 @@ mobileNavItems.forEach((item) => {
 });
 
 function removeClass(element, className){
-	console.log(className);
 	setTimeout( () => {
 		element.classList.remove(className);
 		// make mobilenav invisible after playing slide out animation

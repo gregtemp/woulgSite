@@ -6,7 +6,7 @@
 	padding: 3rem;
 
 	&__img {
-		max-width: 25rem;
+		width: 20vw;
 		height: auto;
 
 		&:hover {
@@ -23,5 +23,17 @@
 
 	&__link:hover {
 		font-weight: 700;
+	}
+
+	@include responsive($tablet-portrait){
+		&__img {
+			width: 30vw;
+		}
+	}
+
+	@include responsive($phone){
+		&__img {
+			width: 50vw;
+		}
 	}
 }

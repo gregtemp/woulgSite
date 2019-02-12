@@ -606,7 +606,7 @@ body {
   align-items: center;
   padding: 3rem; }
   .plugin__img {
-    max-width: 25rem;
+    width: 20vw;
     height: auto; }
     .plugin__img:hover {
       opacity: .75; }
@@ -616,3 +616,9 @@ body {
     text-decoration: none; }
   .plugin__link:hover {
     font-weight: 700; }
+  @media (max-width: 56.25em) {
+    .plugin__img {
+      width: 30vw; } }
+  @media (max-width: 37.5em) {
+    .plugin__img {
+      width: 50vw; } }
