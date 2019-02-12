@@ -448,7 +448,6 @@ body {
   max-width: 100%;
   padding: 1.5rem 0 0 0;
   font-size: 1.1rem;
-  line-height: 1.2rem;
   text-align: left;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -484,8 +483,7 @@ body {
     max-width: 50vw;
     padding-top: 9vh; }
   .newspaper__body {
-    font-size: 1.5rem;
-    line-height: 1.5rem; }
+    font-size: 1.5rem; }
   .newspaper__media {
     width: 50vw;
     height: 28.125vw; }
