@@ -326,17 +326,9 @@ body {
       flex-direction: column; } }
 
 .section-av {
-  display: flex;
-  justify-content: space-evenly;
-  height: auto;
   min-height: 100vh;
   padding-bottom: 2rem;
   background-image: linear-gradient(to top, #f2f2f2, rgba(0, 0, 0, 0.35)); }
-  @media (max-width: 56.25em) {
-    .section-av {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; } }
 
 .section-music {
   height: auto;
@@ -413,6 +405,11 @@ body {
         width: 100vw;
         height: 14vh; } }
 
+.newspaper__container {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto; }
+
 .newspaper__column {
   text-align: center;
   padding-top: 10vh;
@@ -427,8 +424,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25vw;
-  height: 14.0625vw;
+  width: 50vw;
+  height: 28.125vw;
   position: relative; }
 
 .newspaper__iframe {
@@ -457,7 +454,7 @@ body {
   -moz-hyphens: auto;
   hyphens: auto; }
 
-.newspaper__popout-button {
+.newspaper__popout-button, .newspaper__popout-button--back {
   border: none;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
@@ -465,14 +462,18 @@ body {
   color: #fff;
   padding: 1rem 2rem;
   margin-top: 2rem; }
-  .newspaper__popout-button:hover {
+  .newspaper__popout-button:hover, .newspaper__popout-button--back:hover, .newspaper__popout-button--back:hover, .newspaper__popout-button--back--back:hover {
     cursor: pointer;
     background-color: #676767;
     color: #e6e6e6; }
 
 .newspaper__popout-container {
-  padding: 9rem 0 2rem 0;
-  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 2rem 2rem;
+  margin-top: 4rem;
   display: none;
   height: 100vh; }
 
@@ -480,14 +481,18 @@ body {
   margin-bottom: 1.5rem; }
 
 @media (max-width: 56.25em) {
+  .newspaper__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .newspaper__column {
     max-width: 50vw;
     padding-top: 9vh; }
   .newspaper__body {
     font-size: 1.5rem; }
   .newspaper__media {
-    width: 50vw;
-    height: 28.125vw; }
+    width: 75vw;
+    height: 42.1875vw; }
   .newspaper__popout-title {
     font-size: 3rem; } }
 
@@ -495,8 +500,8 @@ body {
   .newspaper__column {
     max-width: 75vw; }
   .newspaper__media {
-    width: 75vw;
-    height: 42.1875vw; } }
+    width: 90vw;
+    height: 50.625vw; } }
 
 .music {
   min-height: 100vh;

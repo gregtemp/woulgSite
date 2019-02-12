@@ -20,20 +20,11 @@
 }
 
 .section-av {
-	display: flex;
-	justify-content: space-evenly;
-	height: auto;
 	min-height: 100vh;
 	padding-bottom: 2rem;
 	background-image: linear-gradient(to top, 
 									  rgba($offwhite, 1),
 									  rgba($black, .35));
-
-	@include responsive($tablet-portrait){
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
 }
 
 .section-music {

@@ -1,5 +1,11 @@
 .newspaper {
 
+	&__container {
+		display: flex;
+		justify-content: space-evenly;
+		height: auto;
+	}
+
 	&__column {
 		text-align: center;
 		padding-top: 10vh;
@@ -16,8 +22,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 25vw;
-		height: 14.0625vw; // 25:14.0625 = 16:9
+		width: 50vw;
+		height: 28.125vw; // 50:28.125 = 16:9
 		position: relative; 
 	}
 
@@ -51,7 +57,8 @@
 		hyphens: auto;
 	}
 
-	&__popout-button {
+	&__popout-button,
+	&__popout-button--back {
 		border: none;
 		text-decoration: none;
 		font-family: "Roboto Mono", monospace;
@@ -60,7 +67,8 @@
 		padding: 1rem 2rem;
 		margin-top: 2rem;
 
-		&:hover {
+		&:hover,
+		&--back:hover {
 			cursor: pointer;
 			background-color: darken($midgrey, 10%);
 			color: darken($white, 10%);
@@ -68,8 +76,12 @@
 	}
 
 	&__popout-container {
-		padding: 9rem 0 2rem 0; // 9 rem is offset for header
-		margin-top: 6rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 2rem 2rem 2rem; // offset for header
+		margin-top: 4rem;
 		display: none;
 		height: 100vh;
 	}
@@ -79,6 +91,13 @@
 	}
 
 	@include responsive($tablet-portrait){
+		
+		&__container {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
 		&__column {
 			max-width: 50vw;
 			padding-top: 9vh;
@@ -89,8 +108,8 @@
 		}
 
 		&__media {
-			width: 50vw;
-			height: 28.125vw;
+			width: 75vw;
+			height: 42.1875vw;
 		}
 
 		&__popout-title {
@@ -104,8 +123,8 @@
 		}
 
 		&__media {
-			width: 75vw;
-			height: 42.1875vw;
+			width: 90vw;
+			height: 50.625vw;
 		}
 	}
 }
