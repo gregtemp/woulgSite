@@ -352,8 +352,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 4rem; }
+    align-items: center; }
+    .section-plugins__container:not(:last-of-type) {
+      margin-bottom: 4rem; }
 
 .card {
   width: 25rem;

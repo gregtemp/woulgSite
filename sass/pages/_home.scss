@@ -66,6 +66,9 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 4rem;
+		
+		&:not(:last-of-type){
+			margin-bottom: 4rem;
+		}
 	}
 }
