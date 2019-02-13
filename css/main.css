@@ -453,6 +453,10 @@ body {
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto; }
+  .newspaper__body--popout {
+    max-width: 40vw; }
+    .newspaper__body--popout:first-of-type {
+      padding: 2rem 0 2rem 0; }
 
 .newspaper__popout-button, .newspaper__popout-button--back {
   border: none;

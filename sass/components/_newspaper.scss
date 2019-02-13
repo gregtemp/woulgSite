@@ -55,6 +55,14 @@
 		-ms-hyphens: auto;
 		-moz-hyphens: auto;
 		hyphens: auto;
+
+		&--popout {
+			max-width: 40vw;
+
+			&:first-of-type {
+				padding: 2rem 0 2rem 0;
+			}
+		}
 	}
 
 	&__popout-button,
