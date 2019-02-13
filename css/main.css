@@ -478,7 +478,8 @@ body {
   align-items: center;
   padding: 7rem 2rem 2rem 2rem;
   display: none;
-  height: 100vh; }
+  height: auto;
+  min-height: 100vh; }
 
 .newspaper__popout-title {
   margin-bottom: 1.5rem; }
@@ -493,8 +494,11 @@ body {
     padding-top: 9vh; }
   .newspaper__body {
     font-size: 1.5rem; }
+    .newspaper__body--popout {
+      max-width: 60vw;
+      font-size: 1.3rem; }
   .newspaper__media {
-    width: 75vw;
+    min-width: 75vw;
     height: 42.1875vw; }
   .newspaper__popout-title {
     font-size: 3rem; } }
@@ -503,8 +507,11 @@ body {
   .newspaper__column {
     max-width: 75vw; }
   .newspaper__media {
-    width: 90vw;
-    height: 50.625vw; } }
+    min-width: 90vw;
+    min-height: 50.625vw; }
+  .newspaper__body--popout {
+    min-width: 90vw;
+    font-size: 1.5rem; } }
 
 .music {
   min-height: 100vh;
