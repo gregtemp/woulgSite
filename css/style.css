@@ -357,6 +357,9 @@ body {
   padding-top: 6rem;
   background-color: #f2f2f2; }
 
+.section-cv {
+  background-color: #f2f2f2; }
+
 .card {
   width: 25rem;
   height: 25rem;
@@ -658,3 +661,8 @@ body {
 
 .lessons__iframe {
   max-width: 80vw; }
+
+.cv__iframe {
+  width: 100vw;
+  height: auto;
+  font-family: "Roboto Mono", monospace; }

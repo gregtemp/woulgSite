@@ -13,7 +13,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "markdown": "^0.5.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.7",
     "concat": "^1.0.3",
