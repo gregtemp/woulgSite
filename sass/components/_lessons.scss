@@ -1,0 +1,19 @@
+.lessons {
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text {
+		padding: 0 10vw;
+		font-size: 1.3rem;
+		margin-bottom: 2rem;
+	}
+
+	&__iframe {
+		max-width: 80vw;
+	}
+}

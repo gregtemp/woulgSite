@@ -353,6 +353,10 @@ body {
     .section-plugins__container:not(:last-of-type) {
       margin-bottom: 4rem; }
 
+.section-lessons {
+  padding-top: 6rem;
+  background-color: #f2f2f2; }
+
 .card {
   width: 25rem;
   height: 25rem;
@@ -641,3 +645,17 @@ body {
   @media only screen and (max-width: 37.5em) {
     .plugin__img {
       width: 50vw; } }
+
+.lessons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.lessons__text {
+  padding: 0 10vw;
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.lessons__iframe {
+  max-width: 80vw; }
