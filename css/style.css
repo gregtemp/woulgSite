@@ -518,7 +518,6 @@ body {
     font-size: 1.5rem; } }
 
 .music {
-  min-height: 100vh;
   height: auto; }
   .music__slider-container {
     display: flex;
