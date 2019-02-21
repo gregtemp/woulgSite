@@ -358,6 +358,10 @@ body {
   background-color: #f2f2f2; }
 
 .section-cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f2f2f2; }
 
 .card {
@@ -662,7 +666,7 @@ body {
 .lessons__iframe {
   max-width: 80vw; }
 
-.cv__iframe {
-  width: 100vw;
-  height: auto;
-  font-family: "Roboto Mono", monospace; }
+.cv__wrapper {
+  max-width: 67vw; }
+  .cv__wrapper > body > h1 {
+    font-size: 5rem; }

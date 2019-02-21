@@ -1,12 +1,9 @@
-.cv {
+.cv__wrapper {
+	max-width: 67vw;
 
-	&__wrapper {
-	
+	// use this pattern to style children
+	& >  body > h1 {
+		font-size: 5rem;
 	}
 
-	&__iframe {
-		width: 100vw;
-		height: auto;
-		font-family: "Roboto Mono", monospace;
-	}
 }

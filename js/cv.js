@@ -1,6 +1,6 @@
 let cvContainer = document.querySelector(".cv__wrapper");
 
-fetch("../mdhtml.html")
+fetch("../cv.html")
 	.then((response) => {
 		// convert loaded file to text
 		return response.text();
