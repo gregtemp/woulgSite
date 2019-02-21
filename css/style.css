@@ -670,11 +670,21 @@ body {
   text-decoration: underline; }
 
 .cv__wrapper {
-  max-width: 67vw; }
-  .cv__wrapper > body > * {
-    margin-bottom: .5rem; }
+  max-width: 67vw;
+  background-color: #e5e5e5;
+  padding: 5rem; }
   .cv__wrapper > body > h1 {
     font-size: 5rem; }
+  .cv__wrapper > body > h2 {
+    margin-top: 2rem;
+    font-size: 2rem; }
+  .cv__wrapper > body > h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem; }
+  .cv__wrapper > body > p,
+  .cv__wrapper > body > a {
+    line-height: 2rem;
+    font-size: 1.25rem; }
   .cv__wrapper > body > #greg-debicki {
     text-align: center;
     font-size: 3rem; }
@@ -684,3 +694,9 @@ body {
     .cv__wrapper > body > #gregmdebickigmailcom > a {
       text-decoration: none;
       color: #404040; }
+  @media only screen and (max-width: 56.25em) {
+    .cv__wrapper {
+      max-width: 80vw; } }
+  @media only screen and (max-width: 37.5em) {
+    .cv__wrapper {
+      max-width: 90vw; } }

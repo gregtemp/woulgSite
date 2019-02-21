@@ -4,16 +4,29 @@
 		text-decoration: underline;
 	}
 
-	&__wrapper{
+	&__wrapper {
 		max-width: 67vw;
-
-		& > body > * {
-			margin-bottom: .5rem;
-		}
-
-		// use this pattern to style children
+		background-color: darken($offwhite, 5%);
+		padding: 5rem;
+		
 		& >  body > h1 {
 			font-size: 5rem;
+		}
+
+		& >  body > h2 {
+			margin-top: 2rem;
+			font-size: 2rem;
+		}
+
+		& >  body > h3 {
+			margin-top: 1.5rem;
+			font-size: 1.5rem;
+		}
+
+		& >  body > p, 
+		& >  body > a {
+			line-height: 2rem;
+			font-size: 1.25rem;
 		}
 
 		& > body > #greg-debicki {
@@ -29,6 +42,14 @@
 				text-decoration: none;
 				color: $darkgrey;
 			}
+		}
+
+		@include responsive($tablet-portrait){
+			max-width: 80vw;
+		}
+
+		@include responsive($phone){
+			max-width: 90vw;
 		}
 	}
 }
