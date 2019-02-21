@@ -1,9 +1,34 @@
-.cv__wrapper {
-	max-width: 67vw;
+.cv {
 
-	// use this pattern to style children
-	& >  body > h1 {
-		font-size: 5rem;
+	&__underline {
+		text-decoration: underline;
 	}
 
+	&__wrapper{
+		max-width: 67vw;
+
+		& > body > * {
+			margin-bottom: .5rem;
+		}
+
+		// use this pattern to style children
+		& >  body > h1 {
+			font-size: 5rem;
+		}
+
+		& > body > #greg-debicki {
+			text-align: center;
+			font-size: 3rem;
+		}
+
+		& > body > #gregmdebickigmailcom {
+			text-align: center;
+			margin-bottom: 3rem;
+
+			& > a {
+				text-decoration: none;
+				color: $darkgrey;
+			}
+		}
+	}
 }

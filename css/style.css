@@ -666,7 +666,21 @@ body {
 .lessons__iframe {
   max-width: 80vw; }
 
+.cv__underline {
+  text-decoration: underline; }
+
 .cv__wrapper {
   max-width: 67vw; }
+  .cv__wrapper > body > * {
+    margin-bottom: .5rem; }
   .cv__wrapper > body > h1 {
     font-size: 5rem; }
+  .cv__wrapper > body > #greg-debicki {
+    text-align: center;
+    font-size: 3rem; }
+  .cv__wrapper > body > #gregmdebickigmailcom {
+    text-align: center;
+    margin-bottom: 3rem; }
+    .cv__wrapper > body > #gregmdebickigmailcom > a {
+      text-decoration: none;
+      color: #404040; }
