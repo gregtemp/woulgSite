@@ -51,12 +51,13 @@ function makeCard(album, destParent) {
 	album.appleMusicLink ? links.appendChild(appleMusic) : null;
 	album.soundcloudLink ? links.appendChild(soundcloud) : null;
 
-	// apply classes
+	// apply classes and attributes
 	card.classList.add("music__card");
 	title.classList.add("music__card-title");
 	label.classList.add("music__card-label");
 	img.classList.add("music__card-img");
 	links.classList.add("music__card-links");
+	img.setAttribute("alt", `${album.title} album artwork`);
 
 	for (let i = 0; i < links.children.length; i++){
 		links.children[i].classList.add("music__card-link"); // apply class

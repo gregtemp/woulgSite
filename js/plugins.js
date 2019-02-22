@@ -16,10 +16,11 @@ function makePluginCard(plugin, destParent) {
 	plugin.gumroadLink ? imgAnchor.href = plugin.gumroadLink : imgAnchor.href = plugin.bandcampLink;
 	plugin.gumroadLink ? name.href = plugin.gumroadLink : name.href = plugin.bandcampLink;
 
-	// apply classes
+	// apply classes and attributes
 	card.classList.add("plugin");
 	name.classList.add("plugin__link");
 	img.classList.add("plugin__img");
+	img.setAttribute("alt", `${plugin.title} artwork`);
 
 	// set link behavior
 	imgAnchor.setAttribute("target", "_blank");
