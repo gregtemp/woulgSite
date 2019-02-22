@@ -1,6 +1,6 @@
 let cvContainer = document.querySelector(".cv__wrapper");
 
-fetch("../cv.html")
+fetch("https://agohorel.github.io/wlg-site/cv.html")
 	.then((response) => {
 		// convert loaded file to text
 		return response.text();
