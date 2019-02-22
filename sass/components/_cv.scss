@@ -8,7 +8,8 @@
 		max-width: 67vw;
 		background-color: darken($offwhite, 5%);
 		padding: 5rem;
-		
+		margin-bottom: 5rem;
+
 		& >  body > h1 {
 			font-size: 5rem;
 		}
@@ -50,6 +51,16 @@
 
 		@include responsive($phone){
 			max-width: 90vw;
+
+			& >  body > h3 {
+				margin-top: 1.75rem;
+				font-size: 1.75rem;
+			}
+
+			& >  body > p, 
+			& >  body > a {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

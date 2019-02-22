@@ -72,7 +72,7 @@ Asylum Speakers (Sydney, Australia)
 **Woulg and Push 1 Stop:** 
 Societe des Arts Technologique - IX Symposium - Projection Dome Stage (Montreal, Canada)
 Societe des Arts Technologique - Projection Dome Stage (Montreal, Canada)
-Woulg: 
+**Woulg**: 
 Eclipse Festival Lunar Stage (near Ile Bitobig, Canada)
 Fractalfest Main Stage (Fractal Forest, USA)
 Societe des Arts Technologique - Projection Dome Stage (Montreal, Canada)
