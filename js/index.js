@@ -5,7 +5,6 @@ window.onload = () => {
 	for (let i = 0; i < allLinks.length; i++){
 		if (allLinks[i].target === "_blank"){
 			allLinks[i].setAttribute("rel", "noreferrer");
-			console.log(allLinks[i]);
 		}
 	}	
 }
