@@ -1,4 +1,17 @@
-// HOME/NAV SECTIONS
+// GLOBAL
+let allLinks = document.getElementsByTagName("a");
+
+window.onload = () => {
+	for (let i = 0; i < allLinks.length; i++){
+		if (allLinks[i].target === "_blank"){
+			allLinks[i].setAttribute("rel", "noreferrer");
+			console.log(allLinks[i]);
+		}
+	}	
+}
+
+
+// NAV 
 let hamburger = document.querySelector(".navbar__hamburger-container");
 let mobileNav = document.querySelector(".mobilenav__container");
 let mobileNavItems = document.querySelectorAll(".mobilenav__item");
@@ -40,6 +53,7 @@ function removeClass(element, className){
 	}, 250);
 }
 
+
 // AV SECTION
 let seeMoreButtons = document.querySelectorAll(".newspaper__popout-button");
 let popoutContainers = document.querySelectorAll(".newspaper__popout-container");
@@ -70,6 +84,7 @@ goBackButtons.forEach((button) => {
 		}		
 	});
 });
+
 
 // MUSIC SECTION
 let slider = document.querySelector(".music__slider");
@@ -381,6 +396,7 @@ let releases = {
 // initial update on load
 updateDisplay();
 
+
 // PLUGINS SECTION
 function makePluginCard(plugin, destParent) {
 	let card = document.createElement("div");
@@ -543,6 +559,7 @@ for (let i = 0; i < maxPatches.length; i++){
 for (let i = 0; i < reaktorPatches.length; i++){
 	makePluginCard(reaktorPatches[i], "#reaktor-patches");
 }
+
 
 // CV SECTION
 let cvContainer = document.querySelector(".cv__wrapper");
