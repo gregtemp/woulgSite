@@ -427,74 +427,81 @@ function makePluginCard(plugin, destParent) {
 
 	// add content to elements
 	name.innerHTML = plugin.title;
-	plugin.img ? img.src = plugin.img : null;
+	
+	// add higher res img for hi dpi screens
+	if (window.devicePixelRatio > 1){
+		plugin.img ? img.src = `${plugin.img}.jpg` : null;
+	} else {
+		plugin.img ? img.src = `${plugin.img}_sm.jpg` : null;
+	}
+	
 	plugin.gumroadLink ? imgAnchor.href = plugin.gumroadLink : imgAnchor.href = plugin.bandcampLink;
 }
 
 let maxPatches = [
 	{
 		title: "second hand modem",
-		img: "./img/plugin_artwork/secondhandmodem.jpg",
+		img: "./img/plugin_artwork/secondhandmodem",
 		gumroadLink: "https://gumroad.com/l/LRCAx",
 		bandcampLink: "https://woulg-related.bandcamp.com/plugin/second-hand-modem-fm"
 	},
 	{
 		title: "fancy convolve",
-		img: "./img/plugin_artwork/fancyconvolve.jpg",
+		img: "./img/plugin_artwork/fancyconvolve",
 		gumroadLink: "https://gumroad.com/l/kkSBI",
 		bandcampLink: "https://woulg-related.bandcamp.com/plugin/fancy-convolve"
 	},
 	{
 		title: "midi pack",
-		img: "./img/plugin_artwork/midipack.jpg",
+		img: "./img/plugin_artwork/midipack",
 		gumroadLink: "https://gumroad.com/l/tSleZ",
 		bandcampLink: undefined
 	},
 	{
 		title: "LFMAOs",
-		img: "./img/plugin_artwork/lfmaos.jpg",
+		img: "./img/plugin_artwork/lfmaos",
 		gumroadLink: "https://gumroad.com/l/CvfTa",
 		bandcampLink: "https://woulg-related.bandcamp.com/plugin/wr-lfmaos"
 	},
 	{
 		title: "step gator",
-		img: "./img/plugin_artwork/stepgator.jpg",
+		img: "./img/plugin_artwork/stepgator",
 		gumroadLink: "https://gumroad.com/l/almJW",
 		bandcampLink: undefined
 	},
 	{
 		title: "pitch match",
-		img: "./img/plugin_artwork/pitchmatch.jpg",
+		img: "./img/plugin_artwork/pitchmatch",
 		gumroadLink: "https://gumroad.com/l/MNjzL",
 		bandcampLink: undefined
 	},
 	{
 		title: "4IR convolve",
-		img: "./img/plugin_artwork/4IRconvolve.jpg",
+		img: "./img/plugin_artwork/4IRconvolve",
 		gumroadLink: "https://gumroad.com/l/HXzFb",
 		bandcampLink: undefined
 	},
 	{
 		title: "scratchy & chain selecta",
-		img: "./img/plugin_artwork/scratchychainselecta.jpg",
+		img: "./img/plugin_artwork/scratchychainselecta",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/plugin/scratchy-and-chain-selecta"
 	},
 	{
 		title: "basic granulator",
-		img: "./img/plugin_artwork/basicgranulator.jpg",
+		img: "./img/plugin_artwork/basicgranulator",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/plugin/basic-granulator"
 	},
 	{
 		title: "sneaky send & receive",
-		img: "./img/plugin_artwork/sneakysendandreceive.jpg",
+		img: "./img/plugin_artwork/sneakysendandreceive",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/plugin/sneaky-send-and-receive"
 	},
 	{
 		title: "nice envelope & random numbers",
-		img: "./img/plugin_artwork/niceenveloperandomnumbers.jpg",
+		img: "./img/plugin_artwork/niceenveloperandomnumbers",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/plugin/nice-envelope-and-random-numbers"
 	}
@@ -503,49 +510,49 @@ let maxPatches = [
 let reaktorPatches = [
 	{
 		title: "wavy tables",
-		img: "./img/plugin_artwork/niceenveloperandomnumbers.jpg",
+		img: "./img/plugin_artwork/niceenveloperandomnumbers",
 		gumroadLink: "https://gumroad.com/l/eplbI",
 		bandcampLink: undefined
 	},
 	{
 		title: "quick granny",
-		img: "./img/plugin_artwork/quickgranny.jpg",
+		img: "./img/plugin_artwork/quickgranny",
 		gumroadLink: "https://gumroad.com/l/itqDMk",
 		bandcampLink: undefined
 	},
 	{
 		title: "speckled freeze",
-		img: "./img/plugin_artwork/speckledfreeze.jpg",
+		img: "./img/plugin_artwork/speckledfreeze",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/album/speckled-freeze"
 	},
 	{
 		title: "glasshole",
-		img: "./img/plugin_artwork/glasshole.jpg",
+		img: "./img/plugin_artwork/glasshole",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/album/glasshole"
 	},
 	{
 		title: "autoOscPan",
-		img: "./img/plugin_artwork/autooscpan.jpg",
+		img: "./img/plugin_artwork/autooscpan",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/album/autooscpan"
 	},
 	{
 		title: "bad eq",
-		img: "./img/plugin_artwork/badeq.jpg",
+		img: "./img/plugin_artwork/badeq",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/album/badeq"
 	},
 	{
 		title: "granular NaN",
-		img: "./img/plugin_artwork/granularnan.jpg",
+		img: "./img/plugin_artwork/granularnan",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/album/granular-nan"
 	},
 	{
 		title: "geometry distortion",
-		img: "./img/plugin_artwork/geometrydistortion.jpg",
+		img: "./img/plugin_artwork/geometrydistortion",
 		gumroadLink: undefined,
 		bandcampLink: "https://woulg-related.bandcamp.com/album/geometry-distortion"
 	}
