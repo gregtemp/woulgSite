@@ -1,22 +1,25 @@
 .section-home {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	padding-top: $navbar-height;
-	min-height: 100vh;
-	height: auto;
-	background-image: linear-gradient(to bottom right, 
-									  rgba($black, .75),
-									  rgba($white, .5)), 
-								      url(../img/tinymoon.jpg);
-	background-size: cover;
-	background-position: top;
-	animation: fadeIn 2s;
+	// width: 100vw;
+	overflow: hidden;
+	height: 100vh;
+	// display: flex;
+	// flex-wrap: wrap;
+	// justify-content: space-evenly;
+	// align-items: center;
+	// padding-top: $navbar-height;
+	// min-height: 100vh;
+	// height: auto;
+	// // background-image: linear-gradient(to bottom right, 
+	// // 								  rgba($black, .75),
+	// // 								  rgba($white, .5)), 
+	// // 							      url(../img/tinymoon.jpg);
+	// // background-size: cover;
+	// // background-position: top;
+	// animation: fadeIn 2s;
 
-	@include responsive($phone){
-		flex-direction: column;
-	}
+	// @include responsive($phone){
+	// 	flex-direction: column;
+	// }
 }
 
 .section-av {

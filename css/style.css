@@ -269,6 +269,35 @@ body {
   .mobilenav__item:hover {
     color: #808080; }
 
+.p5 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  position: relative; }
+  .p5 #p5__container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .p5 #p5__container canvas {
+      width: 100% !important;
+      height: auto !important; }
+  .p5__textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    padding: 5rem;
+    background-color: rgba(242, 242, 242, 0.75);
+    text-align: center; }
+  .p5__text {
+    font-size: 2rem;
+    color: #1a1a1a; }
+
 .footer__footer-box {
   background-color: #404040;
   text-align: center;
@@ -310,20 +339,8 @@ body {
       color: #f2f2f2; }
 
 .section-home {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 6rem;
-  min-height: 100vh;
-  height: auto;
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.5)), url(../img/tinymoon.jpg);
-  background-size: cover;
-  background-position: top;
-  animation: fadeIn 2s; }
-  @media only screen and (max-width: 37.5em) {
-    .section-home {
-      flex-direction: column; } }
+  overflow: hidden;
+  height: 100vh; }
 
 .section-av {
   min-height: 100vh;

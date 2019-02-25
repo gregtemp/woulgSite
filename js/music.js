@@ -56,8 +56,8 @@ function makeCard(album, destParent) {
 	title.classList.add("music__card-title");
 	label.classList.add("music__card-label");
 	img.classList.add("music__card-img");
-	links.classList.add("music__card-links");
 	img.setAttribute("alt", `${album.title} album artwork`);
+	links.classList.add("music__card-links");
 
 	for (let i = 0; i < links.children.length; i++){
 		links.children[i].classList.add("music__card-link"); // apply class

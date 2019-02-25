@@ -1,0 +1,38 @@
+.p5 {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+	position: relative;
+
+	#p5__container {
+		position: relative;
+	    width: 100%;
+	    height: 100%;
+
+		& canvas {
+		    width: 100% !important;
+		    height: auto !important;
+		}
+
+	}
+
+	&__textbox {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: auto;
+		height: auto;
+		padding: 5rem;
+		background-color: rgba($offwhite, .75);
+		text-align: center;
+	}
+
+	&__text {
+		font-size: 2rem;
+		color: $nearblack;
+	}
+}
