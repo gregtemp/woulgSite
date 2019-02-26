@@ -155,7 +155,14 @@ function makeCard(album, destParent) {
 	// add content to elements
 	title.innerHTML = album.title.toLowerCase();
 	label.innerHTML = album.label.toLowerCase();
-	album.albumArt ? img.src = album.albumArt : null;
+
+	// use higher res image for hi dpi screens
+	if (window.devicePixelRatio > 1){
+		album.albumArt ? img.src = `${album.albumArt}.jpg` : null;
+	} else {
+		album.albumArt ? img.src = `${album.albumArt}_sm.jpg` : null;
+	}
+	
 	album.bandcampLink ? bandcamp.innerHTML = "bandcamp" : null;
 	album.bandcampLink ? bandcamp.href = album.bandcampLink : null;
 	album.spotifyLink ? spotify.innerHTML = "spotify" : null;
@@ -171,7 +178,7 @@ let releases = {
 		{
 			title: "Hinchliffe Shuffle",
 			label: "Enigmatik Records (Melbourne, Australia)",
-			albumArt: "img/album_artwork/hinchliffeshuffle.jpg",
+			albumArt: "img/album_artwork/hinchliffeshuffle",
 			bandcampLink: "https://woulg.bandcamp.com/album/hinchliffe-shuffle",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -180,7 +187,7 @@ let releases = {
 		{
 			title: "Floating Longingly Towards the Sun",
 			label: "Outlier Recordings (New York, USA)",
-			albumArt: "img/album_artwork/fltts.jpg",
+			albumArt: "img/album_artwork/fltts",
 			bandcampLink: "https://woulg.bandcamp.com/album/floating-longingly-towards-the-sun",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -189,7 +196,7 @@ let releases = {
 		{
 			title: "late",
 			label: "released on compilation by Outlier Recordings (New York, USA)",
-			albumArt: "img/album_artwork/outsourced.jpg",
+			albumArt: "img/album_artwork/outsourced",
 			bandcampLink: "https://outlierrecordings.bandcamp.com/track/late",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -198,7 +205,7 @@ let releases = {
 		{
 			title: "Vaetxh - Mass (Woulg Remix)",
 			label: "King Deluxe (Salmo, Canada)",
-			albumArt: "img/album_artwork/mass.jpg",
+			albumArt: "img/album_artwork/mass",
 			bandcampLink: "https://kingdeluxe.bandcamp.com/track/mass-woulg-kuffd-up-mirror-mix",
 			spotifyLink: "https://open.spotify.com/track/2JKnAcgDPS96m7maHydGJ8?si=OEffBp2qThKKcgx7mNZIiQ",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/mass-woulg-kuffd-up-mirror-mix/467921182?i=467921188&mt=1&app=music",
@@ -209,7 +216,7 @@ let releases = {
 		{
 			title: "Mindbuffer - Pan FM (Woulg Remix)",
 			label: "Enig’matik Records (Melbourne, Australia)",
-			albumArt: "img/album_artwork/mindbuffer.jpg",
+			albumArt: "img/album_artwork/mindbuffer",
 			bandcampLink: "https://enigmatikrecords.bandcamp.com/track/panfm-woulg-remix",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -218,7 +225,7 @@ let releases = {
 		{
 			title: "Zebbler Encanti Experience - Quetzacoatl (Woulg Remix)",
 			label: "Gravitas Recordings (Austin, USA)",
-			albumArt: "img/album_artwork/zee.jpg",
+			albumArt: "img/album_artwork/zee",
 			bandcampLink: "https://music.gravitasrecordings.com/track/quetzalcoatl-woulg-remix",
 			spotifyLink: "https://open.spotify.com/track/0tcKRYblCCof3w0nXOpQnx?si=KsYnfMY6Roa_Cqo-iEFmZg",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/quetzalcoatl-woulg-remix/591203992?i=591204289&mt=1&app=music",
@@ -229,7 +236,7 @@ let releases = {
 		{
 			title: "cold land",
 			label: "Enig’matik Records (Melbourne, Australia)",
-			albumArt: "img/album_artwork/coldland.jpg",
+			albumArt: "img/album_artwork/coldland",
 			bandcampLink: "https://woulg.bandcamp.com/album/cold-land",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -238,7 +245,7 @@ let releases = {
 		{
 			title: "ghost",
 			label: "Outlier Recordings (New York, USA)",
-			albumArt: "img/album_artwork/ghost.jpg",
+			albumArt: "img/album_artwork/ghost",
 			bandcampLink: "https://woulg.bandcamp.com/album/ghost",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -247,7 +254,7 @@ let releases = {
 		{
 			title: "Zack Christ - Iced Out (Woulg Remix)",
 			label: "Enig’matik Records (Melbourne, Australia)",
-			albumArt: "img/album_artwork/icedout.jpg",
+			albumArt: "img/album_artwork/icedout",
 			bandcampLink: "https://enigmatikrecords.bandcamp.com/track/iced-out-woulg-rmx",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -258,7 +265,7 @@ let releases = {
 		{
 			title: "thin veil",
 			label: "outlier recordings (new york, usa)",
-			albumArt: "img/album_artwork/thinveil.jpg",
+			albumArt: "img/album_artwork/thinveil",
 			bandcampLink: "https://woulg.bandcamp.com/album/thin-veil",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -267,7 +274,7 @@ let releases = {
 		{
 			title: "punishment/ritual",
 			label: "Terra Null Recordings (Boston, USA)",
-			albumArt: "img/album_artwork/punishment.jpg",
+			albumArt: "img/album_artwork/punishment",
 			bandcampLink: "https://woulg.bandcamp.com/album/punishment-ritual",
 			spotifyLink: "https://open.spotify.com/album/34PumDRpevjupt2lqSpdJq?si=M6fRJLULQNuU9jmxjz_Wyw",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/punishment-ritual-single/912246974?mt=1&app=music",
@@ -276,7 +283,7 @@ let releases = {
 		{
 			title: "Cirrus - Shiver Shrapnel (Woulg Remix)",
 			label: "Terra Null Recordings (Boston, USA)",
-			albumArt: "img/album_artwork/shivershrapnel.jpg",
+			albumArt: "img/album_artwork/shivershrapnel",
 			bandcampLink: "https://terranullrecordings.bandcamp.com/track/shiver-shrapnel-woulg-remix",
 			spotifyLink: undefined,
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/shiver-shrapnel-woulg-remix/824087886?i=824087896&mt=1&app=music",
@@ -287,7 +294,7 @@ let releases = {
 		{
 			title: "Lars Fenin - Why Not (Woulg Remix)",
 			label: "Detroit Underground (Detroit, USA)",
-			albumArt: "img/album_artwork/solidarity.jpg",
+			albumArt: "img/album_artwork/solidarity",
 			bandcampLink: "https://detund.bandcamp.com/track/why-not-woulg-remix",
 			spotifyLink: undefined,
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/why-not-woulg-remix/1017056358?i=1017056497&mt=1&app=music",
@@ -298,7 +305,7 @@ let releases = {
 		{
 			title: "Dragged ",
 			label: "Methlab Recordings (London, UK)",
-			albumArt: "img/album_artwork/dragged.jpg",
+			albumArt: "img/album_artwork/dragged",
 			bandcampLink: "https://methlabagency.bandcamp.com/album/dragged-ep",
 			spotifyLink: "https://open.spotify.com/album/1eccyG0BFIDfHjJq07iMER?si=xsf8oXfTSTGdT3_tkDdVzQ",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/dragged/1449502381?mt=1&app=music",
@@ -307,7 +314,7 @@ let releases = {
 		{
 			title: "tiny moon ",
 			label: "Outlier Recordings (New York, USA)",
-			albumArt: "img/album_artwork/tinymoon.jpg",
+			albumArt: "img/album_artwork/tinymoon",
 			bandcampLink: "https://woulg.bandcamp.com/album/tiny-moon",
 			spotifyLink: "https://open.spotify.com/album/6RlTfSNrkbvtwNpuHYJxbN?si=hzwkCrorSfW1n-yQzCJ2sg",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/tiny-moon/1446820936?mt=1&app=music",
@@ -316,7 +323,7 @@ let releases = {
 		{
 			title: "Robot Love - Filament (Woulg Remix) ",
 			label: "Outlier Recordings (New York, USA)",
-			albumArt: "img/album_artwork/bookofleaves.jpg",
+			albumArt: "img/album_artwork/bookofleaves",
 			bandcampLink: "https://outlierrecordings.bandcamp.com/album/out-66-book-of-leaves-remixes",
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -325,7 +332,7 @@ let releases = {
 		{
 			title: "Empathy Switch",
 			label: "collab w/ zebbler encanti experience",
-			albumArt: "img/album_artwork/empathyswitch.jpg",
+			albumArt: "img/album_artwork/empathyswitch",
 			bandcampLink: undefined,
 			spotifyLink: undefined,
 			appleMusicLink: undefined,
@@ -334,7 +341,7 @@ let releases = {
 		{
 			title: "Zack Christ - Centigrade Duckfucker (Woulg Remix)",
 			label: "Husoptagelser (Copenhagen, Denmark)",
-			albumArt: "img/album_artwork/zackchristremix.jpg",
+			albumArt: "img/album_artwork/zackchristremix",
 			bandcampLink: "https://husoptagelser.bandcamp.com/track/centigrade-duckfucker-woulg-remix",
 			spotifyLink: "https://open.spotify.com/track/1cNs4Bn9Tjj4dOd0m6uiV6?si=asehKrqAQIWEGdq8EScjWg",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/centigrade-duckfucker-woulg-remix/1183012854?i=1183012998&mt=1&app=music",
@@ -345,7 +352,7 @@ let releases = {
 		{
 			title: "Osiris - Voicodin (Woulg Remix)",
 			label: "Detroit Underground (Detroit, USA)",
-			albumArt: "img/album_artwork/voicodinremix.jpg",
+			albumArt: "img/album_artwork/voicodinremix",
 			bandcampLink: "https://detund.bandcamp.com/track/voicodin-woulg-remix",
 			spotifyLink: "https://open.spotify.com/track/2cRCsjOn2vietXec0r58u4?si=LL1dnM-oTea7YS7shbjKTw",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/voicodin-woulg-remix/1291118341?i=1291118743&mt=1&app=music",
@@ -354,7 +361,7 @@ let releases = {
 		{
 			title: "The Science - The Sea and I (Woulg Remix)",
 			label: "Methlab Recordings (London, UK)",
-			albumArt: "img/album_artwork/theseaandiremix.jpg",
+			albumArt: "img/album_artwork/theseaandiremix",
 			bandcampLink: "https://methlabagency.bandcamp.com/track/the-sea-and-i-woulg-remix",
 			spotifyLink: "https://open.spotify.com/track/19FMdn5dcVdG2djIjL84YY?si=aKI1whwoS7unU4Peu7R-XQ",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/the-sea-and-i-woulg-remix/1289456391?i=1289456684&mt=1&app=music",
@@ -363,7 +370,7 @@ let releases = {
 		{
 			title: "Foonyap - Woolf and Plath (Woulg Remix)",
 			label: "Foonyap.bandcamp.com (Calgary, Canada)",
-			albumArt: "img/album_artwork/woolfandplathremix.jpg",
+			albumArt: "img/album_artwork/woolfandplathremix",
 			bandcampLink: "https://foonyap.bandcamp.com/track/woolf-and-plath-woulg-remix",
 			spotifyLink: "https://open.spotify.com/track/4TWh5zuTeUDLN3s4XBXWOB?si=QknFNcqcSGargQPogju55Q",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/woolf-and-plath-woulg-remix/1234641708?i=1234641709&mt=1&app=music",
@@ -374,7 +381,7 @@ let releases = {
 		{
 			title: "last time",
 			label: "methlab recordings (london, uk)",
-			albumArt: "img/album_artwork/lasttime.jpg",
+			albumArt: "img/album_artwork/lasttime",
 			bandcampLink: "https://methlabagency.bandcamp.com/album/last-time-lp",
 			spotifyLink: "https://open.spotify.com/album/5woPaQlA2CnIRBVaH44DpS?si=MknWeyfGTsuj9qqI4c6Obw",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/last-time/1397362409?mt=1&app=music",
@@ -383,7 +390,7 @@ let releases = {
 		{
 			title: "what did you think would happen?",
 			label: "self-released collab w/ homesick",
-			albumArt: "img/album_artwork/whatdidyouthinkwouldhappen.jpg",
+			albumArt: "img/album_artwork/whatdidyouthinkwouldhappen",
 			bandcampLink: "https://woulg.bandcamp.com/album/what-did-you-think-would-happen-collab-w-homesick",
 			spotifyLink: "https://open.spotify.com/album/2xqb5Ek27Uw1v0kOHGboFQ?si=AAWFgl5xQ9u3NwPnFYO8-w",
 			appleMusicLink: "https://geo.itunes.apple.com/us/album/what-did-you-think-would-happen-single/1391753569?mt=1&app=music",
