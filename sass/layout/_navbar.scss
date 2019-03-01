@@ -32,7 +32,7 @@
 		flex-direction: row;
 		list-style: none;
 
-		& li:not(:last-child) {
+		&--social li:not(:last-child) {
 	    	margin: 0 2vw 0 0;
 		}
 
@@ -113,6 +113,11 @@
 
 	@include responsive($tablet-portrait){
 		&__items {
+
+			& li:not(:last-child) {
+		    	margin: 0 2vw 0 0;
+			}
+
 
 			&--nav {
 				display: none;

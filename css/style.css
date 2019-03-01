@@ -202,7 +202,7 @@ body {
     display: flex;
     flex-direction: row;
     list-style: none; }
-    .navbar__items li:not(:last-child) {
+    .navbar__items--social li:not(:last-child) {
       margin: 0 2vw 0 0; }
     .navbar__items--nav {
       padding-left: 9rem; }
@@ -244,6 +244,8 @@ body {
     animation: rotateHamburgerBack .25s ease;
     animation-fill-mode: forwards; }
   @media only screen and (max-width: 56.25em) {
+    .navbar__items li:not(:last-child) {
+      margin: 0 2vw 0 0; }
     .navbar__items--nav {
       display: none; }
     .navbar__items--social {
