@@ -50,7 +50,7 @@
 	}
 
 	&__slider-helper {
-
+		font-size: $font-size-paragraph;
 	}
 
 	&__card {
@@ -71,10 +71,11 @@
 		padding: 3rem;
 	
 		&-title {
-
+			font-size: $font-size-nav;
 		}
 
 		&-label {
+			font-size: $font-size-paragraph;
 			color: $darkgrey;
 		}
 
@@ -84,6 +85,7 @@
 		}
 
 		&-links {
+			font-size: $font-size-paragraph;
 			margin-top: 1rem;
 		}
 

@@ -199,7 +199,7 @@ body {
   .navbar__item {
     text-decoration: none;
     color: #808080;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     transition: .2s linear color; }
     .navbar__item--icon {
       height: 3rem;
@@ -238,7 +238,7 @@ body {
         cursor: pointer; } }
   @media only screen and (max-width: 37.5em) {
     .navbar__site-title {
-      font-size: calc(2.4rem - (1rem - 3vw)); }
+      font-size: calc(2.8rem - (1rem - 3vw)); }
     .navbar__items li:not(:last-child) {
       margin: 0 3vw 0 0; }
     .navbar__items--social {
@@ -268,7 +268,7 @@ body {
   animation-fill-mode: forwards; }
 
 .mobilenav__item {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   color: #f2f2f2;
   text-decoration: none;
   padding: 4rem; }
@@ -322,7 +322,7 @@ body {
     margin-right: 2rem; }
 
 .footer__link {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   transition: .1s linear color; }
   .footer__link:link, .footer__link:visited {
     color: #d9d9d9;
@@ -367,7 +367,7 @@ body {
     font-weight: 400;
     padding: 2rem 0 2rem 0; }
   .section-plugins__category {
-    font-size: 2.4rem; }
+    font-size: 2.8rem; }
   .section-plugins__container {
     display: flex;
     flex-wrap: wrap;
@@ -449,7 +449,7 @@ body {
 
 .newspaper__title {
   display: inline-block;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   margin-bottom: 1.5rem; }
 
 .newspaper__media {
@@ -477,7 +477,7 @@ body {
   display: inline-block;
   max-width: 100%;
   padding: 1.5rem 0 0 0;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-align: left;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -486,7 +486,8 @@ body {
   -moz-hyphens: auto;
   hyphens: auto; }
   .newspaper__body--popout {
-    max-width: 40vw; }
+    max-width: 40vw;
+    font-size: 1.4rem; }
     .newspaper__body--popout:first-of-type {
       padding: 2rem 0 2rem 0; }
 
@@ -580,6 +581,8 @@ body {
       height: 2rem;
       background: #1a1a1a;
       cursor: pointer; }
+  .music__slider-helper {
+    font-size: 1.4rem; }
   .music__card {
     display: flex;
     flex-direction: column;
@@ -593,12 +596,16 @@ body {
       justify-content: center;
       align-items: center;
       padding-top: 2rem; }
+    .music__card-title {
+      font-size: 1.8rem; }
     .music__card-label {
+      font-size: 1.4rem;
       color: #404040; }
     .music__card-img {
       margin-top: 1rem;
       max-width: 30rem; }
     .music__card-links {
+      font-size: 1.4rem;
       margin-top: 1rem; }
     .music__card-link, .music__card-link:visited {
       color: #1a1a1a;
@@ -661,7 +668,7 @@ body {
       opacity: .75; }
   .plugin__link, .plugin__link:visited {
     color: #000;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     text-decoration: none; }
   .plugin__link:hover {
     font-weight: 700; }
@@ -681,7 +688,8 @@ body {
 .lessons__text {
   padding: 0 10vw;
   font-size: 1.3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  text-align: center; }
 
 .lessons__iframe {
   max-width: 80vw; }
@@ -698,14 +706,14 @@ body {
     font-size: 5rem; }
   .cv__wrapper > body > h2 {
     margin-top: 2rem;
-    font-size: 2rem; }
+    font-size: 2.4rem; }
   .cv__wrapper > body > h3 {
     margin-top: 1.5rem;
-    font-size: 1.5rem; }
+    font-size: 2rem; }
   .cv__wrapper > body > p,
   .cv__wrapper > body > a {
-    line-height: 2rem;
-    font-size: 1.25rem; }
+    line-height: 1.5;
+    font-size: 1.8rem; }
   .cv__wrapper > body > #greg-debicki {
     text-align: center;
     font-size: 3rem; }
