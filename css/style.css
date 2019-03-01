@@ -193,7 +193,7 @@ body {
     .navbar__items li:not(:last-child) {
       margin: 0 2vw 0 0; }
     .navbar__items--nav {
-      padding-left: 13rem; }
+      padding-left: 9rem; }
     .navbar__items--social {
       padding-right: 2rem; }
   .navbar__item {
@@ -201,6 +201,18 @@ body {
     color: #808080;
     font-size: 1.8rem;
     transition: .2s linear color; }
+    .navbar__item-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 6rem;
+      padding: 0 1.5rem;
+      transition: .2s linear all; }
+      .navbar__item-container:hover p {
+        color: #f2f2f2; }
+      .navbar__item-container:hover {
+        background-color: #404040; }
     .navbar__item--icon {
       height: 3rem;
       max-height: 2.5rem;
@@ -209,8 +221,6 @@ body {
       transition: .2s linear color; }
       .navbar__item--icon:hover {
         fill: #f2f2f2; }
-    .navbar__item:hover {
-      color: #f2f2f2; }
   .navbar__hamburger-container {
     display: none; }
   .navbar__hamburger-icon {
@@ -555,7 +565,7 @@ body {
     align-items: center;
     text-align: center; }
   .music__slider-display {
-    font-size: 4rem; }
+    font-size: 2.8rem; }
   .music__slider-box {
     width: 50%; }
   .music__slider {
@@ -712,8 +722,8 @@ body {
     font-size: 2rem; }
   .cv__wrapper > body > p,
   .cv__wrapper > body > a {
-    line-height: 1.5;
-    font-size: 1.8rem; }
+    line-height: 1.3;
+    font-size: 1.2rem; }
   .cv__wrapper > body > #greg-debicki {
     text-align: center;
     font-size: 3rem; }

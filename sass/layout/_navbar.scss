@@ -37,7 +37,7 @@
 		}
 
 		&--nav {
-			padding-left: 13rem;
+			padding-left: 9rem;
 		}
 
 		&--social {
@@ -51,6 +51,24 @@
 		color: $midgrey;
 		font-size: $font-size-nav;
 		transition: .2s linear color;
+
+		&-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: auto;
+			height: $navbar-height;
+			padding: 0 1.5rem;
+			transition: .2s linear all;
+
+			&:hover p {
+				color: $offwhite;
+			}
+
+			&:hover {
+				background-color: $darkgrey;
+			}
+		}
 
 		&--icon {
 			height: 3rem;
@@ -70,10 +88,6 @@
 
 		&--social {
 
-		}
-
-		&:hover {
-			color: $offwhite;
 		}
 	}
 
