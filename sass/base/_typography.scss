@@ -6,3 +6,10 @@ body {
 	background: $midgrey;
 	color: $offwhite;
 }
+
+.text-header {
+	font-size: $font-size-h2;
+	font-weight: 400;
+	padding: calc(#{$navbar-height} + 2rem) 0 2rem 0;
+	text-align: center;
+}

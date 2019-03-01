@@ -76,6 +76,12 @@ body {
   background: #808080;
   color: #f2f2f2; }
 
+.text-header {
+  font-size: 4rem;
+  font-weight: 400;
+  padding: calc(6rem + 2rem) 0 2rem 0;
+  text-align: center; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -371,7 +377,6 @@ body {
       margin-bottom: 4rem; }
 
 .section-lessons {
-  padding-top: 6rem;
   background-color: #f2f2f2; }
 
 .section-cv {
@@ -440,7 +445,6 @@ body {
 
 .newspaper__column {
   text-align: center;
-  padding-top: 10vh;
   max-width: 22.5vw; }
 
 .newspaper__title {
@@ -548,8 +552,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-top: 8rem; }
+    text-align: center; }
   .music__slider-display {
     font-size: 4rem; }
   .music__slider-box {
