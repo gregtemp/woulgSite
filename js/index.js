@@ -573,9 +573,17 @@ for (let i = 0; i < reaktorPatches.length; i++){
 	makePluginCard(reaktorPatches[i], "#reaktor-patches");
 }
 
+// LESSONS SECTION
+
+const signupIframe = document.querySelector(".lessons__iframe");
+
+// wait until page has loaded to load iframe (causes p5 sketch to hang while loading)
+document.addEventListener("load", (event) => {
+	signupIframe.src = "https://docs.google.com/forms/d/e/1FAIpQLScw9-5OErTTOS3-lEnoxvlQpHYNWZKEswzVMqh7E991UQulvg/viewform?embedded=true";
+});
 
 // CV SECTION
-let cvContainer = document.querySelector(".cv__wrapper");
+const cvContainer = document.querySelector(".cv__wrapper");
 
 fetch("https://agohorel.github.io/wlg-site/cv.html")
 	.then((response) => {
