@@ -17,15 +17,27 @@
 }
 
 @keyframes slideInMobileNav {
-	0% { transform: translateY(-100vh); }
+	0% { 
+		transform: translateY(-100vh); 
+		opacity: 0;
+	}
 
-	100% { transform: translateY(0); }
+	100% { 
+		transform: translateY(0); 
+		opacity: 1;
+	}
 }
 
 @keyframes slideOutMobileNav {
-	0% { transform: translateY(0); }
+	0% { 
+		transform: translateY(0);
+		opacity: 1;
+	}
 
-	100% { transform: translateY(-100vh); }
+	100% { 
+		transform: translateY(-100vh);
+		opacity: 0; 
+	}
 }
 
 @keyframes rotateHamburger {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Woulg is a musician, sound designer, programmer, educator, and new media artist.">
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script type="text/javascript" src="lib/p5.min.js"></script>
 	
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -17,11 +17,45 @@
 	<nav class="navbar">
 		<a href=""><h1 class="navbar__site-title">woulg</h1></a>
 		<ul class="navbar__items navbar__items--nav">
-			<li><a href="#home" class="navbar__item navbar__item--nav">home</a></li>
-			<li><a href="#av" class="navbar__item navbar__item--nav">a/v</a></li>
-			<li><a href="#music" class="navbar__item navbar__item--nav">music</a></li>
-			<li><a href="#plugins" class="navbar__item navbar__item--nav">plugins</a></li>
-			<li><a href="#lessons" class="navbar__item navbar__item--nav">lessons</a></li>
+			<li>
+				<a href="#home" class="navbar__item">
+					<div class="navbar__item-container">
+						<p class="navbar__item navbar__item--nav">home</p>
+					</div>	
+				</a>
+			</li>
+
+			<li>
+				<a href="#av" class="navbar__item">
+					<div class="navbar__item-container">
+						<p class="navbar__item navbar__item--nav">a/v</p>
+					</div>	
+				</a>
+			</li>
+
+			<li>
+				<a href="#music" class="navbar__item">
+					<div class="navbar__item-container">
+						<p class="navbar__item navbar__item--nav">music</p>
+					</div>	
+				</a>
+			</li>
+
+			<li>
+				<a href="#plugins" class="navbar__item">
+					<div class="navbar__item-container">
+						<p class="navbar__item navbar__item--nav">plugins</p>
+					</div>	
+				</a>
+			</li>
+
+			<li>
+				<a href="#lessons" class="navbar__item">
+					<div class="navbar__item-container">
+						<p class="navbar__item navbar__item--nav">lessons</p>
+					</div>	
+				</a>
+			</li>
 		</ul>
 
 		<ul class="navbar__items navbar__items--social">
@@ -78,6 +112,7 @@
 	</section>
 
 	<section id="av" class="section-av">
+		<h1 class="text-header">a/v</h1>
 		<div class="newspaper__container">
 			<div id="ringbuffer" class="newspaper__column" lang="en">
 				<h1 class="newspaper__title">ring buffer</h1>
@@ -256,6 +291,7 @@
 
 	<section class="section-music" id="music">
 		<div class="music">
+			<h1 class="text-header">music</h1>
 			<div class="music__slider-container">
 				<div class="music__slider-box">
 					<p class="music__slider-display"></p>
@@ -287,14 +323,14 @@
 
 	<section class="section-lessons" id="lessons">
 		<div class="lessons__container">
-			<h1 class="section-plugins__title">lessons</h1>
+			<h1 class="text-header">lessons</h1>
 			<p class="lessons__text">Woulg has taught sound design workshops at Berklee’s Masters Campus in Valencia, ITP Camp at New York University, Concordia University and Alberta College of Art and Design. His teaching method is lively and interactive, and aims to guide students to achieve their goals.</p>
 			 <iframe class="lessons__iframe" title="woulg lessons signup form" src="https://docs.google.com/forms/d/e/1FAIpQLScw9-5OErTTOS3-lEnoxvlQpHYNWZKEswzVMqh7E991UQulvg/viewform?embedded=true" width="640" height="1088" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 		</div>
 	</section>
 
 	<section class="section-cv">
-		<h1 class="section-plugins__title">cv</h1>
+		<h1 class="text-header">cv</h1>
 		<div class="cv__wrapper">
 			<!-- cv.html contents go here -->
 		</div>
