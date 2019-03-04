@@ -1,7 +1,3 @@
-# Greg Debicki
-###  greg.m.debicki@gmail.com
-
-
 <h2 class="cv__underline">Awards, Scholarships and Grants</h2>
 
 ###  2017
