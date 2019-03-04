@@ -548,8 +548,7 @@ body {
     justify-content: center;
     align-items: center; }
   .newspaper__column {
-    max-width: 50vw;
-    padding-top: 9vh; }
+    max-width: 50vw; }
   .newspaper__body {
     font-size: 1.5rem; }
     .newspaper__body--popout {
@@ -699,10 +698,12 @@ body {
     font-weight: 700; }
   @media only screen and (max-width: 56.25em) {
     .plugin__img {
-      width: 30vw; } }
+      width: 35vw; } }
   @media only screen and (max-width: 37.5em) {
     .plugin__img {
-      width: 50vw; } }
+      width: 35vw; }
+    .plugin__link, .plugin__link:visited {
+      font-size: 1.5rem; } }
 
 .lessons__container {
   display: flex;

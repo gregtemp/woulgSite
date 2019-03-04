@@ -27,13 +27,18 @@
 
 	@include responsive($tablet-portrait){
 		&__img {
-			width: 30vw;
+			width: 35vw;
 		}
 	}
 
 	@include responsive($phone){
 		&__img {
-			width: 50vw;
+			width: 35vw;
+		}
+
+		&__link,
+		&__link:visited {
+			font-size: 1.5rem;
 		}
 	}
 }
