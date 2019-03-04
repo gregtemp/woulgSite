@@ -108,7 +108,11 @@
 
 		&__column {
 			max-width: 50vw;
-			padding-top: 9vh;
+			
+			&:not(:first-child){
+				padding-top: 9vh;	
+			}
+			
 		}
 
 		&__body {

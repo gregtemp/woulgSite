@@ -549,6 +549,8 @@ body {
     align-items: center; }
   .newspaper__column {
     max-width: 50vw; }
+    .newspaper__column:not(:first-child) {
+      padding-top: 9vh; }
   .newspaper__body {
     font-size: 1.5rem; }
     .newspaper__body--popout {
