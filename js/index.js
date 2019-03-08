@@ -578,7 +578,7 @@ for (let i = 0; i < reaktorPatches.length; i++){
 const signupIframe = document.querySelector(".lessons__iframe");
 
 // wait until page has loaded to load iframe (causes p5 sketch to hang while loading)
-document.addEventListener("load", (event) => {
+window.addEventListener("load", (event) => {
 	signupIframe.src = "https://docs.google.com/forms/d/e/1FAIpQLScw9-5OErTTOS3-lEnoxvlQpHYNWZKEswzVMqh7E991UQulvg/viewform?embedded=true";
 });
 
