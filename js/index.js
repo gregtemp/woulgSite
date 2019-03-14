@@ -450,13 +450,13 @@ let maxPatches = [
 		title: "second hand modem",
 		img: "./img/plugin_artwork/secondhandmodem",
 		gumroadLink: "https://gumroad.com/l/LRCAx",
-		bandcampLink: "https://woulg-related.bandcamp.com/plugin/second-hand-modem-fm"
+		bandcampLink: "https://woulg-related.bandcamp.com/album/second-hand-modem-fm"
 	},
 	{
 		title: "fancy convolve",
 		img: "./img/plugin_artwork/fancyconvolve",
 		gumroadLink: "https://gumroad.com/l/kkSBI",
-		bandcampLink: "https://woulg-related.bandcamp.com/plugin/fancy-convolve"
+		bandcampLink: "https://woulg-related.bandcamp.com/album/fancy-convolve"
 	},
 	{
 		title: "midi pack",
@@ -468,7 +468,7 @@ let maxPatches = [
 		title: "LFMAOs",
 		img: "./img/plugin_artwork/lfmaos",
 		gumroadLink: "https://gumroad.com/l/CvfTa",
-		bandcampLink: "https://woulg-related.bandcamp.com/plugin/wr-lfmaos"
+		bandcampLink: "https://woulg-related.bandcamp.com/album/wr-lfmaos"
 	},
 	{
 		title: "step gator",
@@ -492,25 +492,25 @@ let maxPatches = [
 		title: "scratchy & chain selecta",
 		img: "./img/plugin_artwork/scratchychainselecta",
 		gumroadLink: undefined,
-		bandcampLink: "https://woulg-related.bandcamp.com/plugin/scratchy-and-chain-selecta"
+		bandcampLink: "https://woulg-related.bandcamp.com/album/scratchy-and-chain-selecta"
 	},
 	{
 		title: "basic granulator",
 		img: "./img/plugin_artwork/basicgranulator",
 		gumroadLink: undefined,
-		bandcampLink: "https://woulg-related.bandcamp.com/plugin/basic-granulator"
+		bandcampLink: "https://woulg-related.bandcamp.com/album/basic-granulator"
 	},
 	{
 		title: "sneaky send & receive",
 		img: "./img/plugin_artwork/sneakysendandreceive",
 		gumroadLink: undefined,
-		bandcampLink: "https://woulg-related.bandcamp.com/plugin/sneaky-send-and-receive"
+		bandcampLink: "https://woulg-related.bandcamp.com/album/sneaky-send-and-receive"
 	},
 	{
 		title: "nice envelope & random numbers",
 		img: "./img/plugin_artwork/niceenveloperandomnumbers",
 		gumroadLink: undefined,
-		bandcampLink: "https://woulg-related.bandcamp.com/plugin/nice-envelope-and-random-numbers"
+		bandcampLink: "https://woulg-related.bandcamp.com/album/nice-envelope-and-random-numbers"
 	}
 ];
 
